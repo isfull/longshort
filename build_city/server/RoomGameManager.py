@@ -171,8 +171,8 @@ class RoomGameManager(common.Singleton.Singleton):
         for i in range(0,lenx):
             g.AddGamer(self.m_waiting_rooms[roomid].m_gamers[0])
             del self.m_waiting_rooms[roomid].m_gamers[0]
-        del self.m_waiting_rooms[roomid]
         g.SetMapId(self.m_waiting_rooms[roomid].m_mapid)
+        del self.m_waiting_rooms[roomid]
         g.DoBegin()
         
 
