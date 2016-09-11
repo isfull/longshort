@@ -95,7 +95,7 @@ class Game():
         # 初始化一些游戏参数
         self.m_round_num = int(round(80/len(self.m_userid_list)))
 
-        log.info("gamer"+str(self.m_userid_list))
+        log.info("gamer"+str(self.m_userid_list)+"|mapid:"+self.m_map_id)
         # 游戏状态机进入等待大家加载状态
         self.m_game_stat = self.WAIT_LOADING
         # 启动加载计时器
