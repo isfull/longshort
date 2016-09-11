@@ -155,7 +155,7 @@ class Game():
         None
 
     def _DoRound(self):
-        #print("round:"+str(self.m_round)+"|iterator:"+str(self.m_iterator))
+        print("round:"+str(self.m_round)+"|total round:"+self.m_round_num+"|iterator:"+str(self.m_iterator))
         # m_round是一轮 m_iterator 是一轮里每个人
         # 增加计数器
         if self.m_iterator == len(self.m_userid_list):
