@@ -93,7 +93,7 @@ class Game():
     #---------------------------self.WAIT_LOADING---------------------
     def DoBegin(self):
         # 初始化一些游戏参数
-        self.m_round_num = round(80/len(self.m_userid_list))
+        self.m_round_num = int(round(80/len(self.m_userid_list)))
 
         log.info("gamer"+str(self.m_userid_list))
         # 游戏状态机进入等待大家加载状态
