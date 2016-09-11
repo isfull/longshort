@@ -34,7 +34,7 @@ class Game():
     def __init__(self, gametype="random"):
         self.m_game_stat = self.WAIT_LOADING
         self.m_game_id = common.GenId.GameIdManager().GetGameId()
-        self.m_map_id = "0"
+        self.m_map_id = str(random.randint(1,3)) # 好友房间会额外调用setmapid重置
         self.m_userid_list = []  # 用户列表
         self.m_username_list = ["allen","bill","cavan","david","ellie","frank","gary","hans"] # 后台给的用户名字，和上一个字段一起描述用户
         self.m_set_lock = threading.Lock()
@@ -43,7 +43,7 @@ class Game():
         # 等待加载
         self.m_loading_timer = None
         self.m_loading_set = set()
-        self.m_round_num = 40   # 设定回合数
+        self.m_round_num = 40   # 设定回合数,在GameBegin里会依据人数重置这个值
 
         # 游戏中
         self.m_iterator = 0 # 当前轮到谁
@@ -61,6 +61,8 @@ class Game():
         return self.m_game_id
     def GetMapId(self):
         return self.m_map_id
+    def SetMapId(self, mapid):
+        self.m_map_id = str(mapid)
 
     def AddGamer(self, userid):
         self.m_userid_list.append(userid)
@@ -90,6 +92,9 @@ class Game():
     ############
     #---------------------------self.WAIT_LOADING---------------------
     def DoBegin(self):
+        # 初始化一些游戏参数
+        self.m_round_num = round(80/len(self.m_userid_list))
+
         log.info("gamer"+str(self.m_userid_list))
         # 游戏状态机进入等待大家加载状态
         self.m_game_stat = self.WAIT_LOADING
@@ -104,7 +109,11 @@ class Game():
         #log.info(ids_names_str)
         #ids_names_str = ids_names_str[1:]
         for userid in self.m_userid_list:
-            um.GetUser(userid).GameBegin(self, self.m_userid_list,self.m_username_list)
+            u = um.GetUser(userid)
+            if u == False:
+                log.error("user not found. why game begin?:", userid)
+            else:
+                u.GameBegin(self, self.m_userid_list, self.m_username_list, self.m_map_id, self.m_round_num)
 
     # 某一个用户加载成功
     def LoadingOk(self, user_id):

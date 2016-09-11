@@ -189,7 +189,7 @@ class User(object):
         UserLinkFactory.ReactorSendMessage(self.m_user_link, sc_msg.SerializeToString())
     
     # loading
-    def GameBegin(self, oGame, ids, names):
+    def GameBegin(self, oGame, ids, names, mapid, round_num):
         um = UserManager.UserManager()
 
         self.m_game_object = oGame
@@ -198,7 +198,8 @@ class User(object):
         sc_msg = pb_compile.PATH.mycity_pb2.SCGameMsg()
         sc_msg.type = pb_compile.PATH.mycity_pb2.RANDOM_BROADCAST_BEGIN
         sc_msg.error = pb_compile.PATH.mycity_pb2.OK
-        sc_msg.sc2.mapid = "1"
+        sc_msg.sc2.mapid = mapid
+        sc_msg.sc2.roundnum = round_num
         name_i = 0
         for uidx in ids:
             uinfo = sc_msg.sc2.unames.add()

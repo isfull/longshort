@@ -86,7 +86,8 @@ message SCRoomChange {
 //RANDOM_BROADCAST_BEGIN = 6;// 服务器广播游戏开始
 message SCBroadcastBegin {
   required string mapid = 1;
-  repeated UserInfo unames = 2; // 后台生成的用户名
+  required int32 round_num = 2; // 回合数
+  repeated UserInfo unames = 3; // 后台生成的用户名
 }
 //LOADING_DONE = 7;         // 客户端加载完成
 //ONE_ROUND = 8;            // 服务器广播一回合开始

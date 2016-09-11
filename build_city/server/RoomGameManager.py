@@ -154,7 +154,11 @@ class RoomGameManager(common.Singleton.Singleton):
             names = ["allen","bill","cavan","david","ellie","frank","gary","hans"]
             mapid = self.m_waiting_rooms[roomid].m_mapid
             for i in range(0, len(self.m_waiting_rooms[roomid].m_gamers)):
-                um.GetUser(self.m_waiting_rooms[roomid].m_gamers[i]).RoomChange(mapid,self.m_waiting_rooms[roomid].m_gamers,names)
+                u = um.GetUser(self.m_waiting_rooms[roomid].m_gamers[i])
+                if u == False:
+                    log.error("user not found:",str(self.m_waiting_rooms[roomid].m_gamers[i]))
+                else:
+                    u.RoomChange(mapid,self.m_waiting_rooms[roomid].m_gamers,names)
         else:
             # roomid not exist
             None
@@ -168,6 +172,7 @@ class RoomGameManager(common.Singleton.Singleton):
             g.AddGamer(self.m_waiting_rooms[roomid].m_gamers[0])
             del self.m_waiting_rooms[roomid].m_gamers[0]
         del self.m_waiting_rooms[roomid]
+        g.SetMapid(self.m_waiting_rooms[roomid].m_mapid)
         g.DoBegin()
         
 
