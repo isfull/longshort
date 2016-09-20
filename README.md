@@ -1,2 +1,3 @@
 # longshort
-beginning
+project:
+1. build city
