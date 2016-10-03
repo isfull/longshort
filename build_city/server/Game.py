@@ -83,7 +83,9 @@ class Game():
         # 通知玩家，游戏结束
         um = UserManager.UserManager()
         for userid in self.m_userid_list:
-            um.GetUser(userid).GamerDown()
+            user_x = um.GetUser(userid)
+            if user_x != False:
+                user_x.GamerDown()
         for i in range(0, len(self.m_userid_list)):
             del self.m_userid_list[0]
 
@@ -133,7 +135,9 @@ class Game():
             # 通知加载失败，游戏结束
             um = UserManager.UserManager()
             for userid in self.m_userid_list:
-                um.GetUser(userid).LoadingFail()
+                user_x = um.Getuser(userid)
+                if user_x != False:
+                    user_x.LoadingFail()
 
     #---------------------------self.GAMING---------------------
     # 用户提交操作
@@ -215,7 +219,9 @@ class Game():
             # 通知统计失败，游戏结束
             um = UserManager.UserManager()
             for userid in self.m_userid_list:
-                um.GetUser(userid).CollectFail()
+                user_x = um.GetUser(userid)
+                if user_x != False:
+                    user_x.CollectFail()
     #---------------------------self.BROADCAST---------------------
     def _BroadCast(self):
         # 形成分数结果
