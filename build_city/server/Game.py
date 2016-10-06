@@ -263,7 +263,7 @@ class Game():
             # 保存用户信息
             for userid in self.m_userid_list:
                 sql1 = "insert into tb_user (uid,info,uname) values (%s,%s,%s)"%(um.GetUser(userid).m_UserId,um.GetUser(userid).m_UserInfoStr,um.GetUser(userid).m_UserName)
-                log.info(sql1)
+                #log.info(sql1)
                 cur.execute(sql1)
             # 保存对局信息
             cur.execute(sql2)
