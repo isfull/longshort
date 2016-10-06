@@ -135,7 +135,7 @@ class RoomGameManager(common.Singleton.Singleton):
         sleepflag = True
         while True:
             if sleepflag:
-                time.sleep(1)
+                time.sleep(0.2)
             else:
                 sleepflag = True
             # 检查是否有变化
