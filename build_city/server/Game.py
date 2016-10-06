@@ -43,7 +43,7 @@ class Game():
         # 等待加载
         self.m_loading_timer = None
         self.m_loading_set = set()
-        self.m_round_num = 40   # 设定回合数,在GameBegin里会依据人数重置这个值
+        self.m_round_num = 10   # 设定回合数,在GameBegin里会依据人数重置这个值
 
         # 游戏中
         self.m_iterator = 0 # 当前轮到谁
@@ -254,15 +254,17 @@ class Game():
         del self
 
     def _WriteDB(self):
-        sql1 = "insert into tb_user (uid,info,uname) values (%s,%s,%s)"%(um.GetUser(userid).m_UserId,um.GetUser(userid).m_UserInfoStr,um.GetUser(userid).m_UserName)
+        um = UserManager.UserManager()
         sql2 = "insert into tb_game (gid,mapid,operation) values (%d,%s,%s)"%(int(self.m_game_id),str(self.m_map_id),self.m_all_data)
         sql3 = "insert into tb_game_user (gid,uid,score) values (%d,%s,%d)"%(int(self.m_game_id),k,self.m_score_map[k])
         try:
             con = MySQLdb.connect(host="localhost", user="chenyu", passwd="City#2016",db="db_city",port=3306)
             cur = con.cursor()
-            um = UserManager.UserManager()
+            
             # 保存用户信息
             for userid in self.m_userid_list:
+                sql1 = "insert into tb_user (uid,info,uname) values (%s,%s,%s)"%(um.GetUser(userid).m_UserId,um.GetUser(userid).m_UserInfoStr,um.GetUser(userid).m_UserName)
+                log.info(sql1)
                 cur.execute(sql1)
             # 保存对局信息
             cur.execute(sql2)
@@ -271,7 +273,7 @@ class Game():
                 cur.execute(sql3)
             con.commit()
         except Exception as e:
-            log.error("[mysql error]:"+str(e)+"|sql1:"+sql1+"|sql2:"+sql2+"|sql3:"+sql3)
+            log.error("[mysql error]:"+str(e)+"|sql2:"+sql2+"|sql3:"+sql3)
 
 
 
