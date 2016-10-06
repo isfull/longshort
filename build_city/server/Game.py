@@ -193,9 +193,13 @@ class Game():
             um = UserManager.UserManager()
             for i in range(0, len(self.m_userid_list)):
                 if i == (self.m_iterator-1):
-                    um.GetUser(self.m_userid_list[i]).DoRound(self.m_userid_list[self.m_iterator-1], self.m_round, 60, self.m_last_uid, self.m_last_data, 0)
+                    userx = um.GetUser(self.m_userid_list[i])
+                    if userx != False:
+                        userx.DoRound(self.m_userid_list[self.m_iterator-1], self.m_round, 60, self.m_last_uid, self.m_last_data, 0)
                 else:
-                    um.GetUser(self.m_userid_list[i]).DoRound(self.m_userid_list[self.m_iterator-1], self.m_round, 60, self.m_last_uid, self.m_last_data, 1)
+                    userx = um.GetUser(self.m_userid_list[i])
+                    if userx != False:
+                        userx.DoRound(self.m_userid_list[self.m_iterator-1], self.m_round, 60, self.m_last_uid, self.m_last_data, 1)
             # 重置上一步操作
             self.m_last_uid = "$"
             self.m_last_data = []
