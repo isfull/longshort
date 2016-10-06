@@ -135,7 +135,7 @@ class Game():
             # 通知加载失败，游戏结束
             um = UserManager.UserManager()
             for userid in self.m_userid_list:
-                user_x = um.Getuser(userid)
+                user_x = um.GetUser(userid)
                 if user_x != False:
                     user_x.LoadingFail()
 
@@ -177,9 +177,13 @@ class Game():
             # 结束时得等广播最后一个用户操作
             um = UserManager.UserManager()
             for i in range(0, len(self.m_userid_list)):
-                um.GetUser(self.m_userid_list[i]).BeginWaitResult()
+                userx = um.GetUser(self.m_userid_list[i])
+                if userx != False:
+                    userx.BeginWaitResult()
             for i in range(0, len(self.m_userid_list)):
-                um.GetUser(self.m_userid_list[i]).DoRound("-1", -1, 5, self.m_last_uid, self.m_last_data, 2)
+                userx = um.GetUser(self.m_userid_list[i])
+                if userx != False:
+                    userx.DoRound("-1", -1, 5, self.m_last_uid, self.m_last_data, 2)
             # 重置上一步操作
             self.m_last_uid = "$"
             self.m_last_data = []
@@ -233,7 +237,9 @@ class Game():
         # 广播结果，游戏结束
         um = UserManager.UserManager()
         for userid in self.m_userid_list:
-            um.GetUser(userid).BroadCastResult(self.m_score_map)
+            userx = um.GetUser(userid)
+            if userx != False:
+                userx.BroadCastResult(self.m_score_map)
 
         # 删除游戏管理器中的game，删除game实例
         if self.m_room_type == "random":
@@ -244,21 +250,24 @@ class Game():
         del self
 
     def _WriteDB(self):
+        sql1 = "insert into tb_user (uid,info,uname) values (%s,%s,%s)"%(um.GetUser(userid).m_UserId,um.GetUser(userid).m_UserInfoStr,um.GetUser(userid).m_UserName)
+        sql2 = "insert into tb_game (gid,mapid,operation) values (%d,%s,%s)"%(int(self.m_game_id),str(self.m_map_id),self.m_all_data)
+        sql3 = "insert into tb_game_user (gid,uid,score) values (%d,%s,%d)"%(int(self.m_game_id),k,self.m_score_map[k])
         try:
             con = MySQLdb.connect(host="localhost", user="chenyu", passwd="City#2016",db="db_city",port=3306)
             cur = con.cursor()
             um = UserManager.UserManager()
             # 保存用户信息
             for userid in self.m_userid_list:
-                cur.execute("insert into tb_user (uid,info,uname) values (%s,%s,%s)", (um.GetUser(userid).m_UserId,um.GetUser(userid).m_UserInfoStr,um.GetUser(userid).m_UserName))
+                cur.execute(sql1)
             # 保存对局信息
-            cur.execute("insert into tb_game (gid,mapid,operation) values (%d,%s,%s)",(int(self.m_game_id),str(self.m_map_id),self.m_all_data));
+            cur.execute(sql2)
             # 保存分数信息
             for k in self.m_score_map:
-                cur.execute("insert into tb_game_user (gid,uid,score) values (%d,%s,%d)",(int(self.m_game_id),k,self.m_score_map[k]));
+                cur.execute(sql3)
             con.commit()
         except Exception as e:
-            log.info("[mysql error]:"+str(e))
+            log.error("[mysql error]:"+str(e)+"|sql1:"+sql1+"|sql2:"+sql2+"|sql3:"+sql3)
 
 
 

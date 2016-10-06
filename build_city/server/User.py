@@ -183,7 +183,11 @@ class User(object):
         for uidx in ids:
             uinfo = sc_msg.sc1.unames.add()
             uinfo.uid = uidx
-            uinfo.name = um.GetUser(uidx).m_UserName
+            userx = um.GetUser(uidx)
+            if userx != False:
+                uinfo.name = userx.m_UserName
+            else:
+                uinfo.name = "user not found"
             #uinfo.name = names[name_i]
             #name_i = name_i + 1
         UserLinkFactory.ReactorSendMessage(self.m_user_link, sc_msg.SerializeToString())
@@ -204,7 +208,12 @@ class User(object):
         for uidx in ids:
             uinfo = sc_msg.sc2.unames.add()
             uinfo.uid = uidx
-            uinfo.name = um.GetUser(uidx).m_UserName
+            #uinfo.name = um.GetUser(uidx).m_UserName
+            userx = um.GetUser(uidx)
+            if userx != False:
+                uinfo.name = userx.m_UserName
+            else:
+                uinfo.name = "user not found"
             #uinfo.name = names[name_i]
             #name_i = name_i + 1
         UserLinkFactory.ReactorSendMessage(self.m_user_link, sc_msg.SerializeToString())

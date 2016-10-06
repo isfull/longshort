@@ -125,7 +125,10 @@ class GameManager(common.Singleton.Singleton):
         for i in range(0,lenx):
             g.AddGamer(self.m_waiting_users[0])
             del self.m_waiting_users[0]
-        g.DoBegin()
+        try:
+            g.DoBegin()
+        except Exception as e:
+            log.error("[game manager]: game begin:"+str(e))
 
 
             

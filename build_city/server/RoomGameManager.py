@@ -141,9 +141,12 @@ class RoomGameManager(common.Singleton.Singleton):
             # 检查是否有变化
             self.m_lock.acquire()
             if len(self.m_change_event) > 0:
-                self._DoChange(self.m_change_event[0])
-                del self.m_change_event[0]
-                sleepflag = False
+                try:
+                    self._DoChange(self.m_change_event[0])
+                    del self.m_change_event[0]
+                    sleepflag = False
+                except Exception as e:
+                    log.error("[room game manager]:"+str(e))
             self.m_lock.release()
 
     # 广播房间变化，广播房间全部信息，不只是小变化
@@ -156,7 +159,7 @@ class RoomGameManager(common.Singleton.Singleton):
             for i in range(0, len(self.m_waiting_rooms[roomid].m_gamers)):
                 u = um.GetUser(self.m_waiting_rooms[roomid].m_gamers[i])
                 if u == False:
-                    log.error("user not found:",str(self.m_waiting_rooms[roomid].m_gamers[i]))
+                    log.error("do change:room user not found:",repr(self.m_waiting_rooms[roomid].m_gamers[i]))
                 else:
                     u.RoomChange(mapid,self.m_waiting_rooms[roomid].m_gamers,names)
         else:
