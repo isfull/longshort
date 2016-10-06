@@ -255,26 +255,28 @@ class Game():
 
     def _WriteDB(self):
         um = UserManager.UserManager()
-        sql2 = "insert into tb_game (gid,mapid,operation) values (%d,%s,%s)"%(int(self.m_game_id),str(self.m_map_id),self.m_all_data)
+        sql1 = ""
+        sql2 = "insert into tb_game (gid,mapid,operation) values (%d,'%s','%s')"%(int(self.m_game_id),str(self.m_map_id),self.m_all_data)
+        sql3 = ""
         try:
             con = MySQLdb.connect(host="localhost", user="chenyu", passwd="City#2016",db="db_city",port=3306,charset="utf8")
             cur = con.cursor()
             
             # 保存用户信息
             for userid in self.m_userid_list:
-                sql1 = "insert into tb_user (uid,info,uname) values (%s,%s,%s)"%(um.GetUser(userid).m_UserId,um.GetUser(userid).m_UserInfoStr,um.GetUser(userid).m_UserName)
+                sql1 = "insert into tb_user (uid,info,uname) values (%s,'%s','%s')"%(um.GetUser(userid).m_UserId,um.GetUser(userid).m_UserInfoStr,um.GetUser(userid).m_UserName)
                 #log.info(sql1)
                 cur.execute(sql1)
             # 保存对局信息
             cur.execute(sql2)
             # 保存分数信息
             for k in self.m_score_map:
-                sql3 = "insert into tb_game_user (gid,uid,score) values (%d,%s,%d)"%(int(self.m_game_id),k,self.m_score_map[k])
+                sql3 = "insert into tb_game_user (gid,uid,score) values (%d,'%s',%d)"%(int(self.m_game_id),k,self.m_score_map[k])
                 log.info(sql3)
                 cur.execute(sql3)
             con.commit()
         except Exception as e:
-            log.error("[mysql error]:"+str(e)+"|sql2:"+sql2)
+            log.error("[mysql error]:"+str(e)+"|sql1:"+sql'1'+"|sql2:"+sql2+"|sql3:"+sql3)
 
 
 
