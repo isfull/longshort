@@ -257,7 +257,7 @@ class Game():
         um = UserManager.UserManager()
         sql2 = "insert into tb_game (gid,mapid,operation) values (%d,%s,%s)"%(int(self.m_game_id),str(self.m_map_id),self.m_all_data)
         try:
-            con = MySQLdb.connect(host="localhost", user="chenyu", passwd="City#2016",db="db_city",port=3306)
+            con = MySQLdb.connect(host="localhost", user="chenyu", passwd="City#2016",db="db_city",port=3306,charset="utf8")
             cur = con.cursor()
             
             # 保存用户信息
