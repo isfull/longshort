@@ -276,7 +276,7 @@ class Game():
                 cur.execute(sql3)
             con.commit()
         except Exception as e:
-            log.error("[mysql error]:"+str(e)+"|sql1:"+sql'1'+"|sql2:"+sql2+"|sql3:"+sql3)
+            log.error("[mysql error]:"+str(e)+"|sql1:"+sql1+"|sql2:"+sql2+"|sql3:"+sql3)
 
 
 
