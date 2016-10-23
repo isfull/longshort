@@ -30,7 +30,7 @@ class ServerStatLink(LineReceiver):
         
 
     def connectionLost(self, reason):
-        log.info("some one down" + str(reason))
+        log.info("some stat one down" + str(reason))
 
     def lineReceived(self, line):
         cs_msg = pb_compile.PATH.mycity_pb2.CSStatMsg()
@@ -38,35 +38,20 @@ class ServerStatLink(LineReceiver):
             cs_msg.ParseFromString(line)
 
             # 使用观察者模式改写大循环？
-            if cs_msg.type == pb_compile.PATH.mycity_pb2.RANK:
-                self.FormRank()
-            elif cs_msg.type == pb_compile.PATH.mycity_pb2.ONLINE:
-                self.FormOnline()
-            else:
-                self.UnknownRequest()
+            call_time = cs_msg.time
+            self.FormStat(call_time)
         except:
-            self.UnknownRequest()
+            self.FormStat("-1")
 
     ##-------封装消息---------##
-    def FormRank(self):
+    def FormStat(self, calltime):
+        wait = GameManager.GameManager().GetWaitingUserNum()
         sc_msg = pb_compile.PATH.mycity_pb2.SCStatMsg()
-        sc_msg.type = pb_compile.PATH.mycity_pb2.RANK
         sc_msg.error = pb_compile.PATH.mycity_pb2.OK
-        sc_msg.rank.append("aa:1000")
-        sc_msg.rank.append("bb:2000")
+        sc_msg.time = calltime
+        sc_msg.version = "1.2"
+        sc_msg.waitnum = str(wait)
         self.sendLine(sc_msg.SerializeToString())
-
-    def FormOnline(self):
-        sc_msg = pb_compile.PATH.mycity_pb2.SCStatMsg()
-        sc_msg.type = pb_compile.PATH.mycity_pb2.ONLINE
-        sc_msg.error = pb_compile.PATH.mycity_pb2.OK
-        wait_num = 0
-        wait_num = GameManager.GameManager().GetWaitingUserNum()
-        sc_msg.online = wait_num
-        self.sendLine(sc_msg.SerializeToString())
-
-    def UnknownRequest(self):
-        self.sendLine("{\"error\":\"undefine error\",\"b\":\"2\",\"a\":1}")
 
         
 class ServerStatLinkFactory(ServerFactory):

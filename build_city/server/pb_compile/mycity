@@ -17,22 +17,17 @@ enum ResultType{
 //                  状态链接 
 //-------------------------------------------
 // 这部分定义通用的服务器状态信息的查询
-enum StatType {
-  RANK = 1;     // 排行榜
-  ONLINE = 2;   // 在线人数
-}
 
-// /// c->s ///
 message CSStatMsg {
-  required StatType type = 1;
+  required string time = 1;
 }
 
 // /// s->c ///
 message SCStatMsg {
-  required StatType type = 1;
-  required ResultType error = 2;
-  optional int32 online = 3;
-  repeated string rank = 4;
+  required ResultType error = 1;
+  required string time = 2;
+  required string version = 3;
+  required string waitnum = 4;
 }
 
 //-------------------------------------------
