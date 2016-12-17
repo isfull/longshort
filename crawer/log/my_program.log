@@ -1,0 +1,530 @@
+INFO: 08-06 14:06:38: crawer_main.py:55 * 15560 conf name:config.ini
+INFO: 08-06 14:06:38: crawer_logic.py:95 * 15560 Start Crawling
+
+INFO: 08-06 14:06:38: crawer_logic.py:102 * 15560 Depth 0 Start. Total 1 Links need to visit
+
+INFO: 08-06 14:06:39: crawer_logic.py:145 * 13496 [current depth]:0 [request url ok]:http://www.douban.com
+INFO: 08-06 14:06:39: crawer_logic.py:177 * 13496 [bad case]http://www.douban.com
+INFO: 08-06 14:06:40: crawer_logic.py:105 * 15560 Depth 0 Finish. Total visited Links: 1
+
+INFO: 08-06 14:06:40: crawer_logic.py:102 * 15560 Depth 1 Start. Total 407 Links need to visit
+
+INFO: 08-06 14:06:40: crawer_logic.py:145 * 13680 [current depth]:1 [request url ok]:http://www.douban.com
+INFO: 08-06 14:06:41: crawer_logic.py:177 * 13680 [bad case]http://www.douban.com
+INFO: 08-06 14:06:41: crawer_logic.py:145 * 12612 [current depth]:1 [request url ok]:https://www.douban.com/note/573159821/
+ERROR: 08-06 14:06:41: crawer_page_util.py:84 * 8868 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/青春 
+
+INFO: 08-06 14:06:41: crawer_logic.py:177 * 12612 [bad case]https://www.douban.com/note/573159821/
+ERROR: 08-06 14:06:41: crawer_logic.py:150 * 8868 [current depth]:1[request fail]:https://movie.douban.com/tag/青春
+INFO: 08-06 14:06:41: crawer_logic.py:145 * 13496 [current depth]:1 [request url ok]:https://movie.douban.com/subject/25855071/
+INFO: 08-06 14:06:41: crawer_logic.py:177 * 13496 [bad case]https://movie.douban.com/subject/25855071/
+INFO: 08-06 14:06:43: crawer_logic.py:145 * 12612 [current depth]:1 [request url ok]:https://www.douban.com/note/573900455/
+INFO: 08-06 14:06:43: crawer_logic.py:177 * 12612 [bad case]https://www.douban.com/note/573900455/
+INFO: 08-06 14:06:44: crawer_logic.py:145 * 13680 [current depth]:1 [request url ok]:https://book.douban.com
+INFO: 08-06 14:06:44: crawer_logic.py:177 * 13680 [bad case]https://book.douban.com
+INFO: 08-06 14:06:44: crawer_logic.py:145 * 13496 [current depth]:1 [request url ok]:https://movie.douban.com/subject/4811813/
+INFO: 08-06 14:06:44: crawer_logic.py:177 * 13496 [bad case]https://movie.douban.com/subject/4811813/
+ERROR: 08-06 14:06:44: crawer_page_util.py:84 * 8868 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/犯罪 
+
+ERROR: 08-06 14:06:44: crawer_logic.py:150 * 8868 [current depth]:1[request fail]:https://movie.douban.com/tag/犯罪
+INFO: 08-06 14:06:45: crawer_logic.py:145 * 12612 [current depth]:1 [request url ok]:https://www.douban.com/note/573836200/
+INFO: 08-06 14:06:45: crawer_logic.py:177 * 12612 [bad case]https://www.douban.com/note/573836200/
+INFO: 08-06 14:06:45: crawer_logic.py:145 * 13680 [current depth]:1 [request url ok]:https://movie.douban.com
+INFO: 08-06 14:06:45: crawer_logic.py:177 * 13680 [bad case]https://movie.douban.com
+INFO: 08-06 14:06:45: crawer_logic.py:145 * 13496 [current depth]:1 [request url ok]:https://movie.douban.com/subject/25929151/
+INFO: 08-06 14:06:45: crawer_logic.py:177 * 13496 [bad case]https://movie.douban.com/subject/25929151/
+ERROR: 08-06 14:06:46: crawer_page_util.py:84 * 8868 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/惊悚 
+
+ERROR: 08-06 14:06:46: crawer_logic.py:150 * 8868 [current depth]:1[request fail]:https://movie.douban.com/tag/惊悚
+INFO: 08-06 14:06:46: crawer_logic.py:145 * 12612 [current depth]:1 [request url ok]:https://www.douban.com/note/572470874/
+INFO: 08-06 14:06:46: crawer_logic.py:177 * 12612 [bad case]https://www.douban.com/note/572470874/
+INFO: 08-06 14:06:47: crawer_logic.py:145 * 13680 [current depth]:1 [request url ok]:https://music.douban.com
+INFO: 08-06 14:06:47: crawer_logic.py:177 * 13680 [bad case]https://music.douban.com
+INFO: 08-06 14:06:47: crawer_logic.py:145 * 13496 [current depth]:1 [request url ok]:https://movie.douban.com/subject/26307755/
+INFO: 08-06 14:06:47: crawer_logic.py:177 * 13496 [bad case]https://movie.douban.com/subject/26307755/
+ERROR: 08-06 14:06:47: crawer_page_util.py:84 * 8868 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/文艺 
+
+ERROR: 08-06 14:06:47: crawer_logic.py:150 * 8868 [current depth]:1[request fail]:https://movie.douban.com/tag/文艺
+INFO: 08-06 14:06:48: crawer_logic.py:145 * 12612 [current depth]:1 [request url ok]:https://www.douban.com/note/573704607/
+INFO: 08-06 14:06:48: crawer_logic.py:177 * 12612 [bad case]https://www.douban.com/note/573704607/
+INFO: 08-06 14:06:49: crawer_logic.py:145 * 13680 [current depth]:1 [request url ok]:https://www.douban.com/group/
+INFO: 08-06 14:06:49: crawer_logic.py:177 * 13680 [bad case]https://www.douban.com/group/
+ERROR: 08-06 14:06:49: crawer_page_util.py:84 * 8868 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/搞笑 
+
+ERROR: 08-06 14:06:49: crawer_logic.py:150 * 8868 [current depth]:1[request fail]:https://movie.douban.com/tag/搞笑
+INFO: 08-06 14:06:49: crawer_logic.py:145 * 13496 [current depth]:1 [request url ok]:https://movie.douban.com/showtimes/
+INFO: 08-06 14:06:49: crawer_logic.py:177 * 13496 [bad case]https://movie.douban.com/showtimes/
+INFO: 08-06 14:06:50: crawer_logic.py:145 * 12612 [current depth]:1 [request url ok]:https://www.douban.com/note/573124277/
+INFO: 08-06 14:06:50: crawer_logic.py:177 * 12612 [bad case]https://www.douban.com/note/573124277/
+INFO: 08-06 14:06:50: crawer_logic.py:145 * 13680 [current depth]:1 [request url ok]:https://www.douban.com/location/
+INFO: 08-06 14:06:50: crawer_logic.py:177 * 13680 [bad case]https://www.douban.com/location/
+ERROR: 08-06 14:06:50: crawer_page_util.py:84 * 8868 'ascii' codec can't encode characters in position 30-32: ordinal not in range(128) URL: https://movie.douban.com/tag/纪录片 
+
+ERROR: 08-06 14:06:50: crawer_logic.py:150 * 8868 [current depth]:1[request fail]:https://movie.douban.com/tag/纪录片
+INFO: 08-06 14:06:51: crawer_logic.py:145 * 13496 [current depth]:1 [request url ok]:https://movie.douban.com/subject/24827387/
+INFO: 08-06 14:06:52: crawer_logic.py:145 * 12612 [current depth]:1 [request url ok]:https://www.douban.com/note/573808701/
+ERROR: 08-06 14:06:52: crawer_page_util.py:84 * 8868 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/励志 
+
+INFO: 08-06 14:06:53: crawer_logic.py:145 * 13680 [current depth]:1 [request url ok]:https://douban.fm
+INFO: 08-06 14:07:01: crawer_logic.py:177 * 13496 [bad case]https://movie.douban.com/subject/24827387/
+INFO: 08-06 14:07:01: crawer_logic.py:177 * 12612 [bad case]https://www.douban.com/note/573808701/
+ERROR: 08-06 14:07:01: crawer_logic.py:150 * 8868 [current depth]:1[request fail]:https://movie.douban.com/tag/励志
+INFO: 08-06 14:07:01: crawer_logic.py:177 * 13680 [bad case]https://douban.fm
+INFO: 08-06 14:07:29: crawer_main.py:55 * 14848 conf name:config.ini
+INFO: 08-06 14:07:29: crawer_logic.py:95 * 14848 Start Crawling
+
+INFO: 08-06 14:07:29: crawer_logic.py:102 * 14848 Depth 0 Start. Total 1 Links need to visit
+
+INFO: 08-06 14:07:30: crawer_logic.py:145 * 15492 [current depth]:0 [request url ok]:http://www.douban.com
+INFO: 08-06 14:07:30: crawer_logic.py:177 * 15492 [bad case]http://www.douban.com
+INFO: 08-06 14:07:31: crawer_logic.py:105 * 14848 Depth 0 Finish. Total visited Links: 1
+
+INFO: 08-06 14:07:31: crawer_logic.py:102 * 14848 Depth 1 Start. Total 407 Links need to visit
+
+INFO: 08-06 14:07:31: crawer_logic.py:145 * 1332 [current depth]:1 [request url ok]:http://www.douban.com
+INFO: 08-06 14:07:31: crawer_logic.py:177 * 1332 [bad case]http://www.douban.com
+ERROR: 08-06 14:07:31: crawer_page_util.py:84 * 14912 'ascii' codec can't encode characters in position 29-30: ordinal not in range(128) URL: https://movie.douban.com/tag/青春 
+
+ERROR: 08-06 14:07:31: crawer_logic.py:150 * 14912 [current depth]:1[request fail]:https://movie.douban.com/tag/青春
+INFO: 08-06 14:07:31: crawer_logic.py:145 * 12088 [current depth]:1 [request url ok]:https://www.douban.com/note/573159821/
+INFO: 08-06 14:07:31: crawer_logic.py:177 * 12088 [bad case]https://www.douban.com/note/573159821/
+INFO: 08-06 14:07:31: crawer_logic.py:145 * 15492 [current depth]:1 [request url ok]:https://movie.douban.com/subject/25855071/
+INFO: 08-06 14:07:31: crawer_logic.py:177 * 15492 [bad case]https://movie.douban.com/subject/25855071/
+ERROR: 08-06 14:07:33: crawer_page_util.py:84 * 14912 'ascii' codec can't encode characters in position 29-30: ordinal not in range(128) URL: https://movie.douban.com/tag/犯罪 
+
+ERROR: 08-06 14:07:33: crawer_logic.py:150 * 14912 [current depth]:1[request fail]:https://movie.douban.com/tag/犯罪
+INFO: 08-06 14:07:33: crawer_logic.py:145 * 12088 [current depth]:1 [request url ok]:https://www.douban.com/note/573900455/
+INFO: 08-06 14:07:33: crawer_logic.py:177 * 12088 [bad case]https://www.douban.com/note/573900455/
+INFO: 08-06 14:07:33: crawer_logic.py:145 * 1332 [current depth]:1 [request url ok]:https://book.douban.com
+INFO: 08-06 14:07:33: crawer_logic.py:177 * 1332 [bad case]https://book.douban.com
+INFO: 08-06 14:07:33: crawer_logic.py:145 * 15492 [current depth]:1 [request url ok]:https://movie.douban.com/subject/4811813/
+INFO: 08-06 14:07:33: crawer_logic.py:177 * 15492 [bad case]https://movie.douban.com/subject/4811813/
+ERROR: 08-06 14:07:34: crawer_page_util.py:84 * 14912 'ascii' codec can't encode characters in position 29-30: ordinal not in range(128) URL: https://movie.douban.com/tag/惊悚 
+
+ERROR: 08-06 14:07:34: crawer_logic.py:150 * 14912 [current depth]:1[request fail]:https://movie.douban.com/tag/惊悚
+INFO: 08-06 14:07:34: crawer_logic.py:145 * 1332 [current depth]:1 [request url ok]:https://movie.douban.com
+INFO: 08-06 14:07:34: crawer_logic.py:177 * 1332 [bad case]https://movie.douban.com
+INFO: 08-06 14:07:35: crawer_logic.py:145 * 12088 [current depth]:1 [request url ok]:https://www.douban.com/note/573836200/
+INFO: 08-06 14:07:35: crawer_logic.py:177 * 12088 [bad case]https://www.douban.com/note/573836200/
+INFO: 08-06 14:07:35: crawer_logic.py:145 * 15492 [current depth]:1 [request url ok]:https://movie.douban.com/subject/25929151/
+INFO: 08-06 14:07:35: crawer_logic.py:177 * 15492 [bad case]https://movie.douban.com/subject/25929151/
+INFO: 08-06 14:08:01: crawer_main.py:55 * 5064 conf name:config.ini
+INFO: 08-06 14:08:01: crawer_logic.py:95 * 5064 Start Crawling
+
+INFO: 08-06 14:08:01: crawer_logic.py:102 * 5064 Depth 0 Start. Total 1 Links need to visit
+
+INFO: 08-06 14:08:02: crawer_logic.py:145 * 7320 [current depth]:0 [request url ok]:www.douban.com
+INFO: 08-06 14:08:02: crawer_logic.py:177 * 7320 [bad case]http://www.douban.com
+INFO: 08-06 14:08:03: crawer_logic.py:105 * 5064 Depth 0 Finish. Total visited Links: 1
+
+INFO: 08-06 14:08:03: crawer_logic.py:102 * 5064 Depth 1 Start. Total 408 Links need to visit
+
+INFO: 08-06 14:08:03: crawer_logic.py:145 * 13604 [current depth]:1 [request url ok]:www.douban.com
+INFO: 08-06 14:08:03: crawer_logic.py:177 * 13604 [bad case]http://www.douban.com
+ERROR: 08-06 14:08:03: crawer_page_util.py:84 * 8076 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/青春 
+
+ERROR: 08-06 14:08:03: crawer_logic.py:150 * 8076 [current depth]:1[request fail]:https://movie.douban.com/tag/青春
+INFO: 08-06 14:08:03: crawer_logic.py:145 * 8024 [current depth]:1 [request url ok]:https://www.douban.com/note/573159821/
+INFO: 08-06 14:08:03: crawer_logic.py:177 * 8024 [bad case]https://www.douban.com/note/573159821/
+INFO: 08-06 14:08:03: crawer_logic.py:145 * 7320 [current depth]:1 [request url ok]:https://movie.douban.com/subject/25855071/
+INFO: 08-06 14:08:03: crawer_logic.py:177 * 7320 [bad case]https://movie.douban.com/subject/25855071/
+ERROR: 08-06 14:08:05: crawer_page_util.py:84 * 8076 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/犯罪 
+
+ERROR: 08-06 14:08:05: crawer_logic.py:150 * 8076 [current depth]:1[request fail]:https://movie.douban.com/tag/犯罪
+INFO: 08-06 14:08:05: crawer_logic.py:145 * 8024 [current depth]:1 [request url ok]:https://www.douban.com/note/573900455/
+INFO: 08-06 14:08:05: crawer_logic.py:177 * 8024 [bad case]https://www.douban.com/note/573900455/
+INFO: 08-06 14:08:05: crawer_logic.py:145 * 13604 [current depth]:1 [request url ok]:https://book.douban.com
+INFO: 08-06 14:08:05: crawer_logic.py:177 * 13604 [bad case]https://book.douban.com
+INFO: 08-06 14:08:05: crawer_logic.py:145 * 7320 [current depth]:1 [request url ok]:https://movie.douban.com/subject/4811813/
+INFO: 08-06 14:08:05: crawer_logic.py:177 * 7320 [bad case]https://movie.douban.com/subject/4811813/
+ERROR: 08-06 14:08:06: crawer_page_util.py:84 * 8076 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/惊悚 
+
+ERROR: 08-06 14:08:06: crawer_logic.py:150 * 8076 [current depth]:1[request fail]:https://movie.douban.com/tag/惊悚
+INFO: 08-06 14:08:07: crawer_logic.py:145 * 8024 [current depth]:1 [request url ok]:https://www.douban.com/note/573836200/
+INFO: 08-06 14:08:07: crawer_logic.py:177 * 8024 [bad case]https://www.douban.com/note/573836200/
+INFO: 08-06 14:08:07: crawer_logic.py:145 * 13604 [current depth]:1 [request url ok]:https://movie.douban.com
+INFO: 08-06 14:08:07: crawer_logic.py:177 * 13604 [bad case]https://movie.douban.com
+INFO: 08-06 14:08:07: crawer_logic.py:145 * 7320 [current depth]:1 [request url ok]:https://movie.douban.com/subject/25929151/
+INFO: 08-06 14:08:07: crawer_logic.py:177 * 7320 [bad case]https://movie.douban.com/subject/25929151/
+ERROR: 08-06 14:08:08: crawer_page_util.py:84 * 8076 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/文艺 
+
+ERROR: 08-06 14:08:08: crawer_logic.py:150 * 8076 [current depth]:1[request fail]:https://movie.douban.com/tag/文艺
+INFO: 08-06 14:08:08: crawer_logic.py:145 * 8024 [current depth]:1 [request url ok]:https://www.douban.com/note/572470874/
+INFO: 08-06 14:08:08: crawer_logic.py:177 * 8024 [bad case]https://www.douban.com/note/572470874/
+INFO: 08-06 14:08:09: crawer_logic.py:145 * 13604 [current depth]:1 [request url ok]:https://music.douban.com
+INFO: 08-06 14:08:09: crawer_logic.py:177 * 13604 [bad case]https://music.douban.com
+INFO: 08-06 14:08:09: crawer_logic.py:145 * 7320 [current depth]:1 [request url ok]:https://movie.douban.com/subject/26307755/
+INFO: 08-06 14:08:09: crawer_logic.py:177 * 7320 [bad case]https://movie.douban.com/subject/26307755/
+ERROR: 08-06 14:08:10: crawer_page_util.py:84 * 8076 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/搞笑 
+
+ERROR: 08-06 14:08:10: crawer_logic.py:150 * 8076 [current depth]:1[request fail]:https://movie.douban.com/tag/搞笑
+INFO: 08-06 14:08:10: crawer_logic.py:145 * 8024 [current depth]:1 [request url ok]:https://www.douban.com/note/573704607/
+INFO: 08-06 14:08:10: crawer_logic.py:145 * 13604 [current depth]:1 [request url ok]:https://www.douban.com/group/
+INFO: 08-06 14:08:10: crawer_logic.py:145 * 7320 [current depth]:1 [request url ok]:https://movie.douban.com/showtimes/
+ERROR: 08-06 14:08:11: crawer_page_util.py:84 * 8076 'ascii' codec can't encode characters in position 30-32: ordinal not in range(128) URL: https://movie.douban.com/tag/纪录片 
+
+INFO: 08-06 14:08:17: crawer_logic.py:177 * 8024 [bad case]https://www.douban.com/note/573704607/
+INFO: 08-06 14:08:17: crawer_logic.py:177 * 13604 [bad case]https://www.douban.com/group/
+INFO: 08-06 14:08:17: crawer_logic.py:177 * 7320 [bad case]https://movie.douban.com/showtimes/
+ERROR: 08-06 14:08:17: crawer_logic.py:150 * 8076 [current depth]:1[request fail]:https://movie.douban.com/tag/纪录片
+INFO: 08-06 14:28:49: crawer_main.py:55 * 12256 conf name:config.ini
+INFO: 08-06 14:28:49: crawer_logic.py:95 * 12256 Start Crawling
+
+INFO: 08-06 14:28:49: crawer_logic.py:102 * 12256 Depth 0 Start. Total 1 Links need to visit
+
+INFO: 08-06 14:29:25: crawer_main.py:55 * 8936 conf name:config.ini
+INFO: 08-06 14:29:25: crawer_logic.py:95 * 8936 Start Crawling
+
+INFO: 08-06 14:29:25: crawer_logic.py:102 * 8936 Depth 0 Start. Total 1 Links need to visit
+
+INFO: 08-06 14:29:25: crawer_logic.py:146 * 13444 [current depth]:0 [request url ok]:www.douban.com
+INFO: 08-06 14:29:25: crawer_logic.py:178 * 13444 [bad case]http://www.douban.com
+INFO: 08-06 14:29:26: crawer_logic.py:105 * 8936 Depth 0 Finish. Total visited Links: 1
+
+INFO: 08-06 14:29:26: crawer_logic.py:102 * 8936 Depth 1 Start. Total 408 Links need to visit
+
+INFO: 08-06 14:29:27: crawer_logic.py:146 * 15076 [current depth]:1 [request url ok]:www.douban.com
+INFO: 08-06 14:29:27: crawer_logic.py:178 * 15076 [bad case]http://www.douban.com
+ERROR: 08-06 14:29:27: crawer_page_util.py:91 * 2216 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/青春 
+
+ERROR: 08-06 14:29:27: crawer_logic.py:151 * 2216 [current depth]:1[request fail]:https://movie.douban.com/tag/青春
+INFO: 08-06 14:29:27: crawer_logic.py:146 * 276 [current depth]:1 [request url ok]:https://www.douban.com/note/573159821/
+INFO: 08-06 14:29:27: crawer_logic.py:178 * 276 [bad case]https://www.douban.com/note/573159821/
+INFO: 08-06 14:29:27: crawer_logic.py:146 * 13444 [current depth]:1 [request url ok]:https://movie.douban.com/subject/25855071/
+INFO: 08-06 14:29:27: crawer_logic.py:178 * 13444 [bad case]https://movie.douban.com/subject/25855071/
+ERROR: 08-06 14:29:28: crawer_page_util.py:91 * 2216 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/犯罪 
+
+ERROR: 08-06 14:29:28: crawer_logic.py:151 * 2216 [current depth]:1[request fail]:https://movie.douban.com/tag/犯罪
+INFO: 08-06 14:29:28: crawer_logic.py:146 * 276 [current depth]:1 [request url ok]:https://www.douban.com/note/573900455/
+INFO: 08-06 14:29:28: crawer_logic.py:178 * 276 [bad case]https://www.douban.com/note/573900455/
+INFO: 08-06 14:29:29: crawer_logic.py:146 * 13444 [current depth]:1 [request url ok]:https://movie.douban.com/subject/4811813/
+INFO: 08-06 14:29:29: crawer_logic.py:178 * 13444 [bad case]https://movie.douban.com/subject/4811813/
+INFO: 08-06 14:29:29: crawer_logic.py:146 * 15076 [current depth]:1 [request url ok]:https://book.douban.com
+INFO: 08-06 14:29:29: crawer_logic.py:178 * 15076 [bad case]https://book.douban.com
+ERROR: 08-06 14:29:30: crawer_page_util.py:91 * 2216 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/惊悚 
+
+ERROR: 08-06 14:29:30: crawer_logic.py:151 * 2216 [current depth]:1[request fail]:https://movie.douban.com/tag/惊悚
+INFO: 08-06 14:29:30: crawer_logic.py:146 * 276 [current depth]:1 [request url ok]:https://www.douban.com/note/573836200/
+INFO: 08-06 14:29:30: crawer_logic.py:178 * 276 [bad case]https://www.douban.com/note/573836200/
+INFO: 08-06 14:29:30: crawer_logic.py:146 * 15076 [current depth]:1 [request url ok]:https://movie.douban.com
+INFO: 08-06 14:29:30: crawer_logic.py:178 * 15076 [bad case]https://movie.douban.com
+INFO: 08-06 14:29:30: crawer_logic.py:146 * 13444 [current depth]:1 [request url ok]:https://movie.douban.com/subject/25929151/
+INFO: 08-06 14:29:30: crawer_logic.py:178 * 13444 [bad case]https://movie.douban.com/subject/25929151/
+ERROR: 08-06 14:29:31: crawer_page_util.py:91 * 2216 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/文艺 
+
+ERROR: 08-06 14:29:31: crawer_logic.py:151 * 2216 [current depth]:1[request fail]:https://movie.douban.com/tag/文艺
+INFO: 08-06 14:29:32: crawer_logic.py:146 * 276 [current depth]:1 [request url ok]:https://www.douban.com/note/572470874/
+INFO: 08-06 14:29:32: crawer_logic.py:178 * 276 [bad case]https://www.douban.com/note/572470874/
+INFO: 08-06 14:29:32: crawer_logic.py:146 * 13444 [current depth]:1 [request url ok]:https://movie.douban.com/subject/26307755/
+INFO: 08-06 14:29:32: crawer_logic.py:178 * 13444 [bad case]https://movie.douban.com/subject/26307755/
+INFO: 08-06 14:29:32: crawer_logic.py:146 * 15076 [current depth]:1 [request url ok]:https://music.douban.com
+INFO: 08-06 14:29:32: crawer_logic.py:178 * 15076 [bad case]https://music.douban.com
+ERROR: 08-06 14:29:33: crawer_page_util.py:91 * 2216 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/搞笑 
+
+ERROR: 08-06 14:29:33: crawer_logic.py:151 * 2216 [current depth]:1[request fail]:https://movie.douban.com/tag/搞笑
+INFO: 08-06 14:29:33: crawer_logic.py:146 * 276 [current depth]:1 [request url ok]:https://www.douban.com/note/573704607/
+INFO: 08-06 14:29:33: crawer_logic.py:178 * 276 [bad case]https://www.douban.com/note/573704607/
+INFO: 08-06 14:29:34: crawer_logic.py:146 * 15076 [current depth]:1 [request url ok]:https://www.douban.com/group/
+INFO: 08-06 14:29:34: crawer_logic.py:178 * 15076 [bad case]https://www.douban.com/group/
+INFO: 08-06 14:29:34: crawer_logic.py:146 * 13444 [current depth]:1 [request url ok]:https://movie.douban.com/showtimes/
+INFO: 08-06 14:29:34: crawer_logic.py:178 * 13444 [bad case]https://movie.douban.com/showtimes/
+ERROR: 08-06 14:29:34: crawer_page_util.py:91 * 2216 'ascii' codec can't encode characters in position 30-32: ordinal not in range(128) URL: https://movie.douban.com/tag/纪录片 
+
+ERROR: 08-06 14:29:34: crawer_logic.py:151 * 2216 [current depth]:1[request fail]:https://movie.douban.com/tag/纪录片
+INFO: 08-06 14:29:35: crawer_logic.py:146 * 276 [current depth]:1 [request url ok]:https://www.douban.com/note/573124277/
+INFO: 08-06 14:29:35: crawer_logic.py:178 * 276 [bad case]https://www.douban.com/note/573124277/
+INFO: 08-06 14:29:35: crawer_logic.py:146 * 15076 [current depth]:1 [request url ok]:https://www.douban.com/location/
+INFO: 08-06 14:29:35: crawer_logic.py:178 * 15076 [bad case]https://www.douban.com/location/
+INFO: 08-06 14:29:36: crawer_logic.py:146 * 13444 [current depth]:1 [request url ok]:https://movie.douban.com/subject/24827387/
+INFO: 08-06 14:29:36: crawer_logic.py:178 * 13444 [bad case]https://movie.douban.com/subject/24827387/
+ERROR: 08-06 14:29:36: crawer_page_util.py:91 * 2216 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/励志 
+
+ERROR: 08-06 14:29:36: crawer_logic.py:151 * 2216 [current depth]:1[request fail]:https://movie.douban.com/tag/励志
+INFO: 08-06 14:33:45: crawer_main.py:55 * 10088 conf name:config.ini
+INFO: 08-06 14:33:45: crawer_logic.py:95 * 10088 Start Crawling
+
+INFO: 08-06 14:33:45: crawer_logic.py:102 * 10088 Depth 0 Start. Total 1 Links need to visit
+
+INFO: 08-06 14:33:46: crawer_logic.py:146 * 7880 [current depth]:0 [request url ok]:www.douban.com
+INFO: 08-06 14:33:46: crawer_logic.py:178 * 7880 [bad case]http://www.douban.com
+INFO: 08-06 14:33:47: crawer_logic.py:105 * 10088 Depth 0 Finish. Total visited Links: 1
+
+INFO: 08-06 14:33:47: crawer_logic.py:102 * 10088 Depth 1 Start. Total 408 Links need to visit
+
+INFO: 08-06 14:33:48: crawer_logic.py:146 * 8632 [current depth]:1 [request url ok]:www.douban.com
+INFO: 08-06 14:33:48: crawer_logic.py:178 * 8632 [bad case]http://www.douban.com
+INFO: 08-06 14:33:48: crawer_logic.py:146 * 12472 [current depth]:1 [request url ok]:https://www.douban.com/note/573159821/
+INFO: 08-06 14:33:48: crawer_logic.py:178 * 12472 [bad case]https://www.douban.com/note/573159821/
+ERROR: 08-06 14:33:48: crawer_page_util.py:91 * 6384 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/青春 
+
+ERROR: 08-06 14:33:48: crawer_logic.py:151 * 6384 [current depth]:1[request fail]:https://movie.douban.com/tag/青春
+INFO: 08-06 14:33:48: crawer_logic.py:146 * 7880 [current depth]:1 [request url ok]:https://movie.douban.com/subject/25855071/
+INFO: 08-06 14:33:48: crawer_logic.py:178 * 7880 [bad case]https://movie.douban.com/subject/25855071/
+ERROR: 08-06 14:33:49: crawer_page_util.py:91 * 6384 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/犯罪 
+
+ERROR: 08-06 14:33:49: crawer_logic.py:151 * 6384 [current depth]:1[request fail]:https://movie.douban.com/tag/犯罪
+INFO: 08-06 14:33:49: crawer_logic.py:146 * 12472 [current depth]:1 [request url ok]:https://www.douban.com/note/573900455/
+INFO: 08-06 14:33:49: crawer_logic.py:178 * 12472 [bad case]https://www.douban.com/note/573900455/
+INFO: 08-06 14:33:49: crawer_logic.py:146 * 8632 [current depth]:1 [request url ok]:https://book.douban.com
+INFO: 08-06 14:33:49: crawer_logic.py:178 * 8632 [bad case]https://book.douban.com
+INFO: 08-06 14:33:50: crawer_logic.py:146 * 7880 [current depth]:1 [request url ok]:https://movie.douban.com/subject/4811813/
+INFO: 08-06 14:33:50: crawer_logic.py:178 * 7880 [bad case]https://movie.douban.com/subject/4811813/
+ERROR: 08-06 14:33:51: crawer_page_util.py:91 * 6384 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/惊悚 
+
+ERROR: 08-06 14:33:51: crawer_logic.py:151 * 6384 [current depth]:1[request fail]:https://movie.douban.com/tag/惊悚
+INFO: 08-06 14:33:51: crawer_logic.py:146 * 12472 [current depth]:1 [request url ok]:https://www.douban.com/note/573836200/
+INFO: 08-06 14:33:51: crawer_logic.py:178 * 12472 [bad case]https://www.douban.com/note/573836200/
+INFO: 08-06 14:33:51: crawer_logic.py:146 * 8632 [current depth]:1 [request url ok]:https://movie.douban.com
+INFO: 08-06 14:33:51: crawer_logic.py:178 * 8632 [bad case]https://movie.douban.com
+INFO: 08-06 14:33:52: crawer_logic.py:146 * 7880 [current depth]:1 [request url ok]:https://movie.douban.com/subject/25929151/
+INFO: 08-06 14:33:52: crawer_logic.py:178 * 7880 [bad case]https://movie.douban.com/subject/25929151/
+ERROR: 08-06 14:33:52: crawer_page_util.py:91 * 6384 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/文艺 
+
+ERROR: 08-06 14:33:52: crawer_logic.py:151 * 6384 [current depth]:1[request fail]:https://movie.douban.com/tag/文艺
+INFO: 08-06 14:33:52: crawer_logic.py:146 * 12472 [current depth]:1 [request url ok]:https://www.douban.com/note/572470874/
+INFO: 08-06 14:33:52: crawer_logic.py:178 * 12472 [bad case]https://www.douban.com/note/572470874/
+INFO: 08-06 14:33:53: crawer_logic.py:146 * 8632 [current depth]:1 [request url ok]:https://music.douban.com
+INFO: 08-06 14:33:53: crawer_logic.py:178 * 8632 [bad case]https://music.douban.com
+INFO: 08-06 14:33:53: crawer_logic.py:146 * 7880 [current depth]:1 [request url ok]:https://movie.douban.com/subject/26307755/
+INFO: 08-06 14:33:53: crawer_logic.py:178 * 7880 [bad case]https://movie.douban.com/subject/26307755/
+ERROR: 08-06 14:33:54: crawer_page_util.py:91 * 6384 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/搞笑 
+
+ERROR: 08-06 14:33:54: crawer_logic.py:151 * 6384 [current depth]:1[request fail]:https://movie.douban.com/tag/搞笑
+INFO: 08-06 14:33:54: crawer_logic.py:146 * 12472 [current depth]:1 [request url ok]:https://www.douban.com/note/573704607/
+INFO: 08-06 14:33:54: crawer_logic.py:178 * 12472 [bad case]https://www.douban.com/note/573704607/
+INFO: 08-06 14:33:54: crawer_logic.py:146 * 8632 [current depth]:1 [request url ok]:https://www.douban.com/group/
+INFO: 08-06 14:33:54: crawer_logic.py:178 * 8632 [bad case]https://www.douban.com/group/
+ERROR: 08-06 14:33:55: crawer_page_util.py:91 * 6384 'ascii' codec can't encode characters in position 30-32: ordinal not in range(128) URL: https://movie.douban.com/tag/纪录片 
+
+ERROR: 08-06 14:33:55: crawer_logic.py:151 * 6384 [current depth]:1[request fail]:https://movie.douban.com/tag/纪录片
+INFO: 08-06 14:33:56: crawer_logic.py:146 * 12472 [current depth]:1 [request url ok]:https://www.douban.com/note/573124277/
+INFO: 08-06 14:33:56: crawer_logic.py:178 * 12472 [bad case]https://www.douban.com/note/573124277/
+INFO: 08-06 14:33:56: crawer_logic.py:146 * 8632 [current depth]:1 [request url ok]:https://www.douban.com/location/
+INFO: 08-06 14:33:56: crawer_logic.py:178 * 8632 [bad case]https://www.douban.com/location/
+INFO: 08-06 14:33:56: crawer_logic.py:146 * 7880 [current depth]:1 [request url ok]:https://movie.douban.com/showtimes/
+INFO: 08-06 14:33:56: crawer_logic.py:178 * 7880 [bad case]https://movie.douban.com/showtimes/
+ERROR: 08-06 14:33:57: crawer_page_util.py:91 * 6384 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/励志 
+
+ERROR: 08-06 14:33:57: crawer_logic.py:151 * 6384 [current depth]:1[request fail]:https://movie.douban.com/tag/励志
+INFO: 08-06 14:33:58: crawer_logic.py:146 * 12472 [current depth]:1 [request url ok]:https://www.douban.com/note/573808701/
+INFO: 08-06 14:33:58: crawer_logic.py:178 * 12472 [bad case]https://www.douban.com/note/573808701/
+ERROR: 08-06 14:33:58: crawer_page_util.py:91 * 6384 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/恐怖 
+
+ERROR: 08-06 14:33:58: crawer_logic.py:151 * 6384 [current depth]:1[request fail]:https://movie.douban.com/tag/恐怖
+INFO: 08-06 14:33:58: crawer_logic.py:146 * 7880 [current depth]:1 [request url ok]:https://movie.douban.com/subject/24827387/
+INFO: 08-06 14:33:58: crawer_logic.py:178 * 7880 [bad case]https://movie.douban.com/subject/24827387/
+INFO: 08-06 14:33:59: crawer_logic.py:146 * 8632 [current depth]:1 [request url ok]:https://douban.fm
+INFO: 08-06 14:33:59: crawer_logic.py:178 * 8632 [bad case]https://douban.fm
+ERROR: 08-06 14:34:00: crawer_page_util.py:91 * 6384 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/战争 
+
+ERROR: 08-06 14:34:00: crawer_logic.py:151 * 6384 [current depth]:1[request fail]:https://movie.douban.com/tag/战争
+INFO: 08-06 14:34:00: crawer_logic.py:146 * 12472 [current depth]:1 [request url ok]:https://www.douban.com/note/573957430/
+INFO: 08-06 14:34:00: crawer_logic.py:178 * 12472 [bad case]https://www.douban.com/note/573957430/
+INFO: 08-06 14:34:00: crawer_logic.py:146 * 8632 [current depth]:1 [request url ok]:https://dongxi.douban.com?dcs=anonymous-home&dcm=douban
+INFO: 08-06 14:34:00: crawer_logic.py:178 * 8632 [bad case]https://dongxi.douban.com?dcs=anonymous-home&dcm=douban
+ERROR: 08-06 14:34:01: crawer_page_util.py:91 * 6384 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/短片 
+
+ERROR: 08-06 14:34:01: crawer_logic.py:151 * 6384 [current depth]:1[request fail]:https://movie.douban.com/tag/短片
+INFO: 08-06 14:34:01: crawer_logic.py:146 * 12472 [current depth]:1 [request url ok]:https://www.douban.com/note/573081667/
+INFO: 08-06 14:34:01: crawer_logic.py:178 * 12472 [bad case]https://www.douban.com/note/573081667/
+INFO: 08-06 14:34:02: crawer_logic.py:146 * 8632 [current depth]:1 [request url ok]:https://market.douban.com?dcs=anonymous-home
+INFO: 08-06 14:34:02: crawer_logic.py:178 * 8632 [bad case]https://market.douban.com?dcs=anonymous-home
+ERROR: 08-06 14:34:03: crawer_page_util.py:91 * 6384 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/美国 
+
+ERROR: 08-06 14:34:03: crawer_logic.py:151 * 6384 [current depth]:1[request fail]:https://movie.douban.com/tag/美国
+ERROR: 08-06 14:34:03: crawer_page_util.py:91 * 7880 HTTPSConnectionPool(host='movie.douban.com', port=443): Read timed out. (read timeout=1) URL: https://movie.douban.com/subject/24827387/cinema/ 
+
+ERROR: 08-06 14:34:03: crawer_logic.py:151 * 7880 [current depth]:1[request fail]:https://movie.douban.com/subject/24827387/cinema/
+INFO: 08-06 14:34:03: crawer_logic.py:146 * 8632 [current depth]:1 [request url ok]:https://www.douban.com
+INFO: 08-06 14:34:03: crawer_logic.py:178 * 8632 [bad case]https://www.douban.com
+ERROR: 08-06 14:34:04: crawer_page_util.py:91 * 6384 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/日本 
+
+ERROR: 08-06 14:34:04: crawer_logic.py:151 * 6384 [current depth]:1[request fail]:https://movie.douban.com/tag/日本
+INFO: 08-06 14:34:05: crawer_logic.py:146 * 8632 [current depth]:1 [request url ok]:https://www.douban.com/accounts/resetpassword
+INFO: 08-06 14:34:05: crawer_logic.py:178 * 8632 [bad case]https://www.douban.com/accounts/resetpassword
+INFO: 08-06 14:34:05: crawer_logic.py:146 * 7880 [current depth]:1 [request url ok]:https://movie.douban.com/subject/25843976/
+INFO: 08-06 14:34:05: crawer_logic.py:178 * 7880 [bad case]https://movie.douban.com/subject/25843976/
+INFO: 08-06 14:34:06: crawer_logic.py:146 * 12472 [current depth]:1 [request url ok]:https://movie.douban.com/nowplaying/
+INFO: 08-06 14:34:06: crawer_logic.py:178 * 12472 [bad case]https://movie.douban.com/nowplaying/
+ERROR: 08-06 14:34:06: crawer_page_util.py:91 * 6384 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/香港 
+
+ERROR: 08-06 14:34:06: crawer_logic.py:151 * 6384 [current depth]:1[request fail]:https://movie.douban.com/tag/香港
+INFO: 08-06 14:34:06: crawer_logic.py:146 * 8632 [current depth]:1 [request url ok]:http://www.douban.com/accounts/register
+INFO: 08-06 14:34:06: crawer_logic.py:178 * 8632 [bad case]http://www.douban.com/accounts/register
+INFO: 08-06 14:34:07: crawer_logic.py:146 * 12472 [current depth]:1 [request url ok]:https://movie.douban.com/explore
+INFO: 08-06 14:34:07: crawer_logic.py:178 * 12472 [bad case]https://movie.douban.com/explore
+ERROR: 08-06 14:34:07: crawer_page_util.py:91 * 6384 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/英国 
+
+ERROR: 08-06 14:34:07: crawer_logic.py:151 * 6384 [current depth]:1[request fail]:https://movie.douban.com/tag/英国
+INFO: 08-06 14:34:08: crawer_logic.py:146 * 8632 [current depth]:1 [request url ok]:https://www.douban.com/accounts/connect/wechat/?from=douban-web-anony-home
+INFO: 08-06 14:34:08: crawer_logic.py:178 * 8632 [bad case]https://www.douban.com/accounts/connect/wechat/?from=douban-web-anony-home
+ERROR: 08-06 14:34:09: crawer_page_util.py:91 * 6384 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/中国 
+
+ERROR: 08-06 14:34:09: crawer_logic.py:151 * 6384 [current depth]:1[request fail]:https://movie.douban.com/tag/中国
+INFO: 08-06 14:34:09: crawer_logic.py:146 * 8632 [current depth]:1 [request url ok]:https://www.douban.com/accounts/connect/sina_weibo/?from=douban-web-anony-home
+INFO: 08-06 14:34:09: crawer_logic.py:178 * 8632 [bad case]https://www.douban.com/accounts/connect/sina_weibo/?from=douban-web-anony-home
+INFO: 08-06 14:34:10: crawer_logic.py:146 * 12472 [current depth]:1 [request url ok]:https://movie.douban.com/tv/
+INFO: 08-06 14:34:10: crawer_logic.py:178 * 12472 [bad case]https://movie.douban.com/tv/
+ERROR: 08-06 14:34:10: crawer_page_util.py:91 * 7880 HTTPSConnectionPool(host='movie.douban.com', port=443): Read timed out. (read timeout=1) URL: https://movie.douban.com/subject/25843976/cinema/ 
+
+ERROR: 08-06 14:34:10: crawer_logic.py:151 * 7880 [current depth]:1[request fail]:https://movie.douban.com/subject/25843976/cinema/
+ERROR: 08-06 14:34:10: crawer_page_util.py:91 * 6384 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/法国 
+
+ERROR: 08-06 14:34:10: crawer_logic.py:151 * 6384 [current depth]:1[request fail]:https://movie.douban.com/tag/法国
+INFO: 08-06 14:34:11: crawer_logic.py:146 * 8632 [current depth]:1 [request url ok]:https://www.douban.com/doubanapp/app?channel=nimingye
+INFO: 08-06 14:34:11: crawer_logic.py:178 * 8632 [bad case]https://www.douban.com/doubanapp/app?channel=nimingye
+INFO: 08-06 14:34:11: crawer_logic.py:146 * 12472 [current depth]:1 [request url ok]:https://movie.douban.com/chart
+INFO: 08-06 14:34:11: crawer_logic.py:178 * 12472 [bad case]https://movie.douban.com/chart
+INFO: 08-06 14:34:12: crawer_logic.py:146 * 8632 [current depth]:1 [request url ok]:https://moment.douban.com/app/?source=anony_douban
+INFO: 08-06 14:34:12: crawer_logic.py:178 * 8632 [bad case]https://moment.douban.com/app/?source=anony_douban
+ERROR: 08-06 14:34:12: crawer_page_util.py:91 * 6384 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/韩国 
+
+ERROR: 08-06 14:34:12: crawer_logic.py:151 * 6384 [current depth]:1[request fail]:https://movie.douban.com/tag/韩国
+INFO: 08-06 14:34:12: crawer_logic.py:146 * 12472 [current depth]:1 [request url ok]:https://movie.douban.com/tag/
+INFO: 08-06 14:34:12: crawer_logic.py:178 * 12472 [bad case]https://movie.douban.com/tag/
+INFO: 08-06 14:34:13: crawer_logic.py:146 * 8632 [current depth]:1 [request url ok]:https://www.douban.com/online/?r=i
+INFO: 08-06 14:34:13: crawer_logic.py:178 * 8632 [bad case]https://www.douban.com/online/?r=i
+ERROR: 08-06 14:34:14: crawer_page_util.py:91 * 6384 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/台湾 
+
+ERROR: 08-06 14:34:14: crawer_logic.py:151 * 6384 [current depth]:1[request fail]:https://movie.douban.com/tag/台湾
+INFO: 08-06 14:34:14: crawer_logic.py:146 * 12472 [current depth]:1 [request url ok]:https://movie.douban.com/review/best/
+INFO: 08-06 14:34:14: crawer_logic.py:178 * 12472 [bad case]https://movie.douban.com/review/best/
+ERROR: 08-06 14:34:14: crawer_page_util.py:91 * 7880 HTTPSConnectionPool(host='movie.douban.com', port=443): Read timed out. (read timeout=1) URL: https://movie.douban.com/subject/21817627/ 
+
+ERROR: 08-06 14:34:14: crawer_logic.py:151 * 7880 [current depth]:1[request fail]:https://movie.douban.com/subject/21817627/
+INFO: 08-06 14:34:15: crawer_logic.py:146 * 8632 [current depth]:1 [request url ok]:https://www.douban.com/online/122993699/
+INFO: 08-06 14:34:15: crawer_logic.py:178 * 8632 [bad case]https://www.douban.com/online/122993699/
+ERROR: 08-06 14:34:15: crawer_page_util.py:91 * 6384 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/德国 
+
+ERROR: 08-06 14:34:15: crawer_logic.py:151 * 6384 [current depth]:1[request fail]:https://movie.douban.com/tag/德国
+INFO: 08-06 14:34:16: crawer_logic.py:146 * 8632 [current depth]:1 [request url ok]:https://www.douban.com/online/123010369/
+INFO: 08-06 14:34:16: crawer_logic.py:178 * 8632 [bad case]https://www.douban.com/online/123010369/
+ERROR: 08-06 14:34:17: crawer_page_util.py:91 * 6384 'ascii' codec can't encode characters in position 30-32: ordinal not in range(128) URL: https://movie.douban.com/tag/意大利 
+
+ERROR: 08-06 14:34:17: crawer_logic.py:151 * 6384 [current depth]:1[request fail]:https://movie.douban.com/tag/意大利
+INFO: 08-06 14:34:17: crawer_logic.py:146 * 8632 [current depth]:1 [request url ok]:https://www.douban.com/online/122992528/
+INFO: 08-06 14:34:17: crawer_logic.py:178 * 8632 [bad case]https://www.douban.com/online/122992528/
+INFO: 08-06 14:34:18: crawer_logic.py:146 * 12472 [current depth]:1 [request url ok]:https://movie.douban.com/trailers
+INFO: 08-06 14:34:18: crawer_logic.py:178 * 12472 [bad case]https://movie.douban.com/trailers
+INFO: 08-06 14:34:19: crawer_logic.py:146 * 8632 [current depth]:1 [request url ok]:https://www.douban.com/explore/
+INFO: 08-06 14:34:19: crawer_logic.py:178 * 8632 [bad case]https://www.douban.com/explore/
+INFO: 08-06 14:34:19: crawer_logic.py:146 * 6384 [current depth]:1 [request url ok]:https://movie.douban.com/subject/25977027/
+INFO: 08-06 14:34:19: crawer_logic.py:178 * 6384 [bad case]https://movie.douban.com/subject/25977027/
+ERROR: 08-06 14:34:19: crawer_page_util.py:91 * 7880 HTTPSConnectionPool(host='movie.douban.com', port=443): Read timed out. (read timeout=1) URL: https://movie.douban.com/subject/21817627/cinema/ 
+
+ERROR: 08-06 14:34:19: crawer_logic.py:151 * 7880 [current depth]:1[request fail]:https://movie.douban.com/subject/21817627/cinema/
+INFO: 08-06 14:34:20: crawer_logic.py:146 * 12472 [current depth]:1 [request url ok]:https://movie.douban.com/askmatrix/hot_questions/all
+INFO: 08-06 14:34:20: crawer_logic.py:178 * 12472 [bad case]https://movie.douban.com/askmatrix/hot_questions/all
+INFO: 08-06 14:34:20: crawer_logic.py:146 * 8632 [current depth]:1 [request url ok]:https://www.douban.com/photos/album/118725711/
+INFO: 08-06 14:34:20: crawer_logic.py:178 * 8632 [bad case]https://www.douban.com/photos/album/118725711/
+INFO: 08-06 14:34:21: crawer_logic.py:146 * 7880 [current depth]:1 [request url ok]:https://movie.douban.com/subject/26394441/
+INFO: 08-06 14:34:21: crawer_logic.py:178 * 7880 [bad case]https://movie.douban.com/subject/26394441/
+INFO: 08-06 14:34:21: crawer_logic.py:146 * 6384 [current depth]:1 [request url ok]:https://movie.douban.com/subject/26614893/
+INFO: 08-06 14:34:21: crawer_logic.py:178 * 6384 [bad case]https://movie.douban.com/subject/26614893/
+INFO: 08-06 14:34:21: crawer_logic.py:146 * 12472 [current depth]:1 [request url ok]:https://movie.douban.com/tag/?view=type
+INFO: 08-06 14:34:21: crawer_logic.py:178 * 12472 [bad case]https://movie.douban.com/tag/?view=type
+INFO: 08-06 14:34:22: crawer_logic.py:146 * 8632 [current depth]:1 [request url ok]:https://www.douban.com/photos/album/1627950624/
+INFO: 08-06 14:34:22: crawer_logic.py:178 * 8632 [bad case]https://www.douban.com/photos/album/1627950624/
+ERROR: 08-06 14:34:23: crawer_page_util.py:91 * 12472 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/爱情 
+
+ERROR: 08-06 14:34:23: crawer_logic.py:151 * 12472 [current depth]:1[request fail]:https://movie.douban.com/tag/爱情
+INFO: 08-06 14:34:23: crawer_logic.py:146 * 6384 [current depth]:1 [request url ok]:https://movie.douban.com/subject/26235349/
+INFO: 08-06 14:34:23: crawer_logic.py:178 * 6384 [bad case]https://movie.douban.com/subject/26235349/
+INFO: 08-06 14:34:23: crawer_logic.py:146 * 8632 [current depth]:1 [request url ok]:https://www.douban.com/photos/album/131846854/
+INFO: 08-06 14:34:23: crawer_logic.py:178 * 8632 [bad case]https://www.douban.com/photos/album/131846854/
+ERROR: 08-06 14:34:24: crawer_page_util.py:91 * 12472 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/喜剧 
+
+ERROR: 08-06 14:34:24: crawer_logic.py:151 * 12472 [current depth]:1[request fail]:https://movie.douban.com/tag/喜剧
+INFO: 08-06 14:34:25: crawer_logic.py:146 * 8632 [current depth]:1 [request url ok]:https://www.douban.com/photos/album/77056672/
+INFO: 08-06 14:34:25: crawer_logic.py:178 * 8632 [bad case]https://www.douban.com/photos/album/77056672/
+INFO: 08-06 14:34:25: crawer_logic.py:146 * 6384 [current depth]:1 [request url ok]:https://movie.douban.com/subject/25917787/
+INFO: 08-06 14:34:25: crawer_logic.py:178 * 6384 [bad case]https://movie.douban.com/subject/25917787/
+ERROR: 08-06 14:34:26: crawer_page_util.py:91 * 12472 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/动画 
+
+ERROR: 08-06 14:34:26: crawer_logic.py:151 * 12472 [current depth]:1[request fail]:https://movie.douban.com/tag/动画
+ERROR: 08-06 14:34:26: crawer_page_util.py:91 * 7880 HTTPSConnectionPool(host='movie.douban.com', port=443): Read timed out. (read timeout=1) URL: https://movie.douban.com/subject/26394441/cinema/ 
+
+ERROR: 08-06 14:34:26: crawer_logic.py:151 * 7880 [current depth]:1[request fail]:https://movie.douban.com/subject/26394441/cinema/
+INFO: 08-06 14:34:27: crawer_logic.py:146 * 8632 [current depth]:1 [request url ok]:https://www.douban.com/note/573086136/
+INFO: 08-06 14:34:27: crawer_logic.py:178 * 8632 [bad case]https://www.douban.com/note/573086136/
+INFO: 08-06 14:34:27: crawer_logic.py:146 * 6384 [current depth]:1 [request url ok]:https://movie.douban.com/subject/26354587/
+INFO: 08-06 14:34:27: crawer_logic.py:178 * 6384 [bad case]https://movie.douban.com/subject/26354587/
+ERROR: 08-06 14:34:28: crawer_page_util.py:91 * 12472 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/剧情 
+
+ERROR: 08-06 14:34:28: crawer_logic.py:151 * 12472 [current depth]:1[request fail]:https://movie.douban.com/tag/剧情
+INFO: 08-06 14:34:28: crawer_logic.py:146 * 7880 [current depth]:1 [request url ok]:https://movie.douban.com/subject/24529353/
+INFO: 08-06 14:34:28: crawer_logic.py:178 * 7880 [bad case]https://movie.douban.com/subject/24529353/
+INFO: 08-06 14:34:29: crawer_logic.py:146 * 6384 [current depth]:1 [request url ok]:https://movie.douban.com/subject/26628357/
+INFO: 08-06 14:34:29: crawer_logic.py:178 * 6384 [bad case]https://movie.douban.com/subject/26628357/
+ERROR: 08-06 14:34:29: crawer_page_util.py:91 * 12472 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/科幻 
+
+ERROR: 08-06 14:34:29: crawer_logic.py:151 * 12472 [current depth]:1[request fail]:https://movie.douban.com/tag/科幻
+ERROR: 08-06 14:34:30: crawer_page_util.py:91 * 6384 'ascii' codec can't encode characters in position 42-43: ordinal not in range(128) URL: https://www.douban.com/group/explore?tag=购物 
+
+ERROR: 08-06 14:34:30: crawer_logic.py:151 * 6384 [current depth]:1[request fail]:https://www.douban.com/group/explore?tag=购物
+ERROR: 08-06 14:34:31: crawer_page_util.py:91 * 12472 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/动作 
+
+ERROR: 08-06 14:34:31: crawer_logic.py:151 * 12472 [current depth]:1[request fail]:https://movie.douban.com/tag/动作
+ERROR: 08-06 14:34:32: crawer_page_util.py:91 * 8632 HTTPSConnectionPool(host='www.douban.com', port=443): Read timed out. (read timeout=1) URL: http://www.douban.com/group/explore/life 
+
+ERROR: 08-06 14:34:32: crawer_logic.py:151 * 8632 [current depth]:1[request fail]:http://www.douban.com/group/explore/life
+ERROR: 08-06 14:34:32: crawer_page_util.py:91 * 6384 'ascii' codec can't encode characters in position 42-43: ordinal not in range(128) URL: https://www.douban.com/group/explore?tag=淘宝 
+
+ERROR: 08-06 14:34:32: crawer_logic.py:151 * 6384 [current depth]:1[request fail]:https://www.douban.com/group/explore?tag=淘宝
+ERROR: 08-06 14:34:32: crawer_page_util.py:91 * 12472 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/经典 
+
+ERROR: 08-06 14:34:32: crawer_logic.py:151 * 12472 [current depth]:1[request fail]:https://movie.douban.com/tag/经典
+ERROR: 08-06 14:34:33: crawer_page_util.py:91 * 7880 HTTPSConnectionPool(host='movie.douban.com', port=443): Read timed out. (read timeout=1) URL: https://movie.douban.com/subject/24529353/cinema/ 
+
+ERROR: 08-06 14:34:33: crawer_logic.py:151 * 7880 [current depth]:1[request fail]:https://movie.douban.com/subject/24529353/cinema/
+INFO: 08-06 14:34:33: crawer_logic.py:146 * 8632 [current depth]:1 [request url ok]:http://www.douban.com/group/explore/tech
+INFO: 08-06 14:34:33: crawer_logic.py:178 * 8632 [bad case]http://www.douban.com/group/explore/tech
+ERROR: 08-06 14:34:33: crawer_page_util.py:91 * 6384 'ascii' codec can't encode characters in position 42-43: ordinal not in range(128) URL: https://www.douban.com/group/explore?tag=二手 
+
+ERROR: 08-06 14:34:33: crawer_logic.py:151 * 6384 [current depth]:1[request fail]:https://www.douban.com/group/explore?tag=二手
+ERROR: 08-06 14:34:34: crawer_page_util.py:91 * 12472 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/悬疑 
+
+ERROR: 08-06 14:34:34: crawer_logic.py:151 * 12472 [current depth]:1[request fail]:https://movie.douban.com/tag/悬疑
+INFO: 08-06 14:34:34: crawer_logic.py:146 * 7880 [current depth]:1 [request url ok]:https://movie.douban.com/subject/25850122/
+INFO: 08-06 14:34:34: crawer_logic.py:178 * 7880 [bad case]https://movie.douban.com/subject/25850122/
+ERROR: 08-06 14:34:35: crawer_page_util.py:91 * 8632 'ascii' codec can't encode characters in position 42-43: ordinal not in range(128) URL: https://www.douban.com/group/explore?tag=兴趣 
+
+ERROR: 08-06 14:34:35: crawer_logic.py:151 * 8632 [current depth]:1[request fail]:https://www.douban.com/group/explore?tag=兴趣
+ERROR: 08-06 14:34:35: crawer_page_util.py:91 * 6384 'ascii' codec can't encode characters in position 42-43: ordinal not in range(128) URL: https://www.douban.com/group/explore?tag=团购 
+
+ERROR: 08-06 14:34:35: crawer_logic.py:151 * 6384 [current depth]:1[request fail]:https://www.douban.com/group/explore?tag=团购
+ERROR: 08-06 14:34:35: crawer_page_util.py:91 * 12472 'ascii' codec can't encode characters in position 42-43: ordinal not in range(128) URL: https://www.douban.com/group/explore?tag=人文 
+
+ERROR: 08-06 14:34:35: crawer_logic.py:151 * 12472 [current depth]:1[request fail]:https://www.douban.com/group/explore?tag=人文
+ERROR: 08-06 14:34:36: crawer_page_util.py:91 * 8632 'ascii' codec can't encode characters in position 42-43: ordinal not in range(128) URL: https://www.douban.com/group/explore?tag=旅行 
+
+ERROR: 08-06 14:34:37: crawer_page_util.py:91 * 6384 'ascii' codec can't encode characters in position 42-43: ordinal not in range(128) URL: https://www.douban.com/group/explore?tag=数码 
+
+ERROR: 08-06 14:34:37: crawer_page_util.py:91 * 12472 'ascii' codec can't encode characters in position 42-43: ordinal not in range(128) URL: https://www.douban.com/group/explore?tag=社科 
+
+ERROR: 08-06 14:34:39: crawer_page_util.py:91 * 7880 HTTPSConnectionPool(host='movie.douban.com', port=443): Read timed out. (read timeout=1) URL: https://movie.douban.com/subject/25850122/cinema/ 
+
+ERROR: 08-06 14:34:58: crawer_logic.py:151 * 8632 [current depth]:1[request fail]:https://www.douban.com/group/explore?tag=旅行
+ERROR: 08-06 14:34:58: crawer_logic.py:151 * 6384 [current depth]:1[request fail]:https://www.douban.com/group/explore?tag=数码
+ERROR: 08-06 14:34:58: crawer_logic.py:151 * 12472 [current depth]:1[request fail]:https://www.douban.com/group/explore?tag=社科
+ERROR: 08-06 14:34:58: crawer_logic.py:151 * 7880 [current depth]:1[request fail]:https://movie.douban.com/subject/25850122/cinema/
+INFO: 08-06 14:40:17: crawer_main.py:55 * 11308 conf name:config.ini
+INFO: 08-06 14:40:17: crawer_logic.py:95 * 11308 Start Crawling
+
+INFO: 08-06 14:40:17: crawer_logic.py:102 * 11308 Depth 0 Start. Total 1 Links need to visit
+
+INFO: 08-06 14:40:20: crawer_logic.py:148 * 12412 [current depth]:0 [request url ok]:www.douban.com
+INFO: 08-06 14:40:20: crawer_logic.py:180 * 12412 [bad case]http://www.douban.com
+INFO: 08-06 14:40:21: crawer_logic.py:105 * 11308 Depth 0 Finish. Total visited Links: 1
+
+INFO: 08-06 14:40:21: crawer_logic.py:102 * 11308 Depth 1 Start. Total 408 Links need to visit
+
+INFO: 08-06 14:40:21: crawer_logic.py:148 * 12812 [current depth]:1 [request url ok]:www.douban.com
+INFO: 08-06 14:40:21: crawer_logic.py:180 * 12812 [bad case]http://www.douban.com
+ERROR: 08-06 14:40:21: crawer_page_util.py:91 * 3408 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/青春 
+
+ERROR: 08-06 14:40:21: crawer_logic.py:153 * 3408 [current depth]:1[request fail]:https://movie.douban.com/tag/青春
+INFO: 08-06 14:40:21: crawer_logic.py:148 * 16200 [current depth]:1 [request url ok]:https://www.douban.com/note/573159821/
+INFO: 08-06 14:40:21: crawer_logic.py:180 * 16200 [bad case]https://www.douban.com/note/573159821/
+INFO: 08-06 14:40:22: crawer_logic.py:148 * 12412 [current depth]:1 [request url ok]:https://movie.douban.com/subject/25855071/
+INFO: 08-06 14:40:22: crawer_logic.py:180 * 12412 [bad case]https://movie.douban.com/subject/25855071/

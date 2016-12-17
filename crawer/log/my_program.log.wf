@@ -1,0 +1,314 @@
+ERROR: 05-18 14:45:38: CrawerLogic.py:272 * 7400 [URL]: http://www.baidu.com/ Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\3614091\CrawerLogic.py", line 250, in _SavePageToFile
+    with open(page_file, 'w') as fp:
+IOError: [Errno 2] No such file or directory: 'C:\\Users\\Administrator\\Desktop\\3614091/pages/http%3A%2F%2Fwww.baidu.com%2F'
+
+ERROR: 05-18 14:45:38: CrawerLogic.py:273 * 7400 [Errno 2] No such file or directory: 'C:\\Users\\Administrator\\Desktop\\3614091/pages/http%3A%2F%2Fwww.baidu.com%2F'
+ERROR: 05-18 14:45:42: CrawerLogic.py:272 * 11008 [URL]: https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\3614091\CrawerLogic.py", line 250, in _SavePageToFile
+    with open(page_file, 'w') as fp:
+IOError: [Errno 2] No such file or directory: 'C:\\Users\\Administrator\\Desktop\\3614091/pages/https%3A%2F%2Fpassport.baidu.com%2Fv2%2F%3Flogin%26tpl%3Dmn%26u%3Dhttp%253A%252F%252Fwww.baidu.com%252F'
+
+ERROR: 05-18 14:45:42: CrawerLogic.py:273 * 11008 [Errno 2] No such file or directory: 'C:\\Users\\Administrator\\Desktop\\3614091/pages/https%3A%2F%2Fpassport.baidu.com%2Fv2%2F%3Flogin%26tpl%3Dmn%26u%3Dhttp%253A%252F%252Fwww.baidu.com%252F'
+ERROR: 05-18 14:45:45: CrawerLogic.py:272 * 9664 [URL]: http://jianyi.baidu.com/ Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\3614091\CrawerLogic.py", line 250, in _SavePageToFile
+    with open(page_file, 'w') as fp:
+IOError: [Errno 2] No such file or directory: 'C:\\Users\\Administrator\\Desktop\\3614091/pages/http%3A%2F%2Fjianyi.baidu.com%2F'
+
+ERROR: 05-18 14:45:45: CrawerLogic.py:273 * 9664 [Errno 2] No such file or directory: 'C:\\Users\\Administrator\\Desktop\\3614091/pages/http%3A%2F%2Fjianyi.baidu.com%2F'
+ERROR: 05-18 14:50:13: CrawerLogic.py:272 * 8792 [URL]: http://www.baidu.com/ Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\3614091\CrawerLogic.py", line 250, in _SavePageToFile
+    with open(page_file, 'w') as fp:
+IOError: [Errno 2] No such file or directory: 'C:\\Users\\Administrator\\Desktop\\3614091/pages/http%3A%2F%2Fwww.baidu.com%2F'
+
+ERROR: 05-18 14:50:13: CrawerLogic.py:273 * 8792 [Errno 2] No such file or directory: 'C:\\Users\\Administrator\\Desktop\\3614091/pages/http%3A%2F%2Fwww.baidu.com%2F'
+ERROR: 05-18 14:50:17: CrawerLogic.py:272 * 10716 [URL]: https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\3614091\CrawerLogic.py", line 250, in _SavePageToFile
+    with open(page_file, 'w') as fp:
+IOError: [Errno 2] No such file or directory: 'C:\\Users\\Administrator\\Desktop\\3614091/pages/https%3A%2F%2Fpassport.baidu.com%2Fv2%2F%3Flogin%26tpl%3Dmn%26u%3Dhttp%253A%252F%252Fwww.baidu.com%252F'
+
+ERROR: 05-18 14:50:17: CrawerLogic.py:273 * 10716 [Errno 2] No such file or directory: 'C:\\Users\\Administrator\\Desktop\\3614091/pages/https%3A%2F%2Fpassport.baidu.com%2Fv2%2F%3Flogin%26tpl%3Dmn%26u%3Dhttp%253A%252F%252Fwww.baidu.com%252F'
+ERROR: 05-18 14:50:36: CrawerLogic.py:272 * 8792 [URL]: http://jianyi.baidu.com/ Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\3614091\CrawerLogic.py", line 250, in _SavePageToFile
+    with open(page_file, 'w') as fp:
+IOError: [Errno 2] No such file or directory: 'C:\\Users\\Administrator\\Desktop\\3614091/pages/http%3A%2F%2Fjianyi.baidu.com%2F'
+
+ERROR: 05-18 14:50:36: CrawerLogic.py:273 * 8792 [Errno 2] No such file or directory: 'C:\\Users\\Administrator\\Desktop\\3614091/pages/http%3A%2F%2Fjianyi.baidu.com%2F'
+ERROR: 05-30 21:38:44: crawer_page_util.py:83 * 18348 HTTPConnectionPool(host='www.google.com.hk', port=80): Max retries exceeded with url: /url?sa=p&hl=zh-CN&pref=hkredirect&pval=yes&q=http://www.google.com.hk/%3Fgws_rd%3Dcr&ust=1464616187844216&usg=AFQjCNG8Y1g7_kZMHPBgaGue4T9cF2x6RQ (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000002D44550>, 'Connection to www.google.com.hk timed out. (connect timeout=1)')) URL: http://www.google.com 
+
+ERROR: 05-30 21:38:44: crawer_logic.py:210 * 18348 [request fail]:http://www.google.com
+ERROR: 05-30 21:47:32: crawer_page_util.py:83 * 18184 HTTPConnectionPool(host='www.google.com.hk', port=80): Max retries exceeded with url: /url?sa=p&hl=zh-CN&pref=hkredirect&pval=yes&q=http://www.google.com.hk/%3Fgws_rd%3Dcr&ust=1464616716179300&usg=AFQjCNFG7ijnHlnq0pF2ipDHPWqAKpBroA (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000002A94630>, 'Connection to www.google.com.hk timed out. (connect timeout=1)')) URL: http://www.google.com 
+
+ERROR: 05-30 21:47:32: crawer_logic.py:212 * 18184 [request fail]:http://www.google.com
+ERROR: 05-30 21:49:38: crawer_page_util.py:83 * 17856 HTTPConnectionPool(host='www.google.com.hk', port=80): Max retries exceeded with url: /url?sa=p&hl=zh-CN&pref=hkredirect&pval=yes&q=http://www.google.com.hk/%3Fgws_rd%3Dcr&ust=1464616841917802&usg=AFQjCNFVnn6Obz44NTCt5uBPlWhTSDCWMg (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.HTTPConnection object at 0x00000000029E3630>, 'Connection to www.google.com.hk timed out. (connect timeout=1)')) URL: http://www.google.com 
+
+ERROR: 05-30 21:49:38: crawer_logic.py:212 * 17856 [request fail]:http://www.google.com
+ERROR: 05-30 21:54:21: crawer_page_util.py:83 * 16240 HTTPConnectionPool(host='www.google.com.hk', port=80): Max retries exceeded with url: /url?sa=p&hl=zh-CN&pref=hkredirect&pval=yes&q=http://www.google.com.hk/%3Fgws_rd%3Dcr&ust=1464617125453499&usg=AFQjCNF2hKZ3r_UVQ6tLEAz9eflKQfbszA (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000002A5C630>, 'Connection to www.google.com.hk timed out. (connect timeout=1)')) URL: http://www.google.com 
+
+ERROR: 05-30 21:54:21: crawer_logic.py:212 * 16240 [request fail]:http://www.google.com
+ERROR: 05-30 22:03:14: crawer_page_util.py:83 * 18236 HTTPConnectionPool(host='www.google.com.hk', port=80): Max retries exceeded with url: /url?sa=p&hl=zh-CN&pref=hkredirect&pval=yes&q=http://www.google.com.hk/%3Fgws_rd%3Dcr&ust=1464617657813753&usg=AFQjCNFFIyrDGHXEqOSpig0fPqVrG89wYA (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000002B02630>, 'Connection to www.google.com.hk timed out. (connect timeout=1)')) URL: http://www.google.com 
+
+ERROR: 05-30 22:03:14: crawer_logic.py:213 * 18236 [request fail]:http://www.google.com
+ERROR: 05-30 22:05:41: crawer_page_util.py:83 * 17728 HTTPConnectionPool(host='www.google.com.hk', port=80): Max retries exceeded with url: /url?sa=p&hl=zh-CN&pref=hkredirect&pval=yes&q=http://www.google.com.hk/%3Fgws_rd%3Dcr&ust=1464617805077693&usg=AFQjCNGMMYFfkUoQC5rlbiVkTUR-9E9GiA (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000002CD0630>, 'Connection to www.google.com.hk timed out. (connect timeout=1)')) URL: http://www.google.com 
+
+ERROR: 05-30 22:05:41: crawer_logic.py:213 * 17728 [request fail]:http://www.google.com
+ERROR: 05-30 22:07:44: crawer_page_util.py:83 * 19072 HTTPConnectionPool(host='www.google.com.hk', port=80): Max retries exceeded with url: /url?sa=p&hl=zh-CN&pref=hkredirect&pval=yes&q=http://www.google.com.hk/%3Fgws_rd%3Dcr&ust=1464617927920247&usg=AFQjCNGBS6m22N3e1kwYnSldKtoQ-OorKA (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000002BEC630>, 'Connection to www.google.com.hk timed out. (connect timeout=1)')) URL: http://www.google.com 
+
+ERROR: 05-30 22:07:44: crawer_logic.py:214 * 19072 [request fail]:http://www.google.com
+ERROR: 05-30 22:08:37: crawer_page_util.py:83 * 16880 HTTPConnectionPool(host='www.google.com.hk', port=80): Max retries exceeded with url: /url?sa=p&hl=zh-CN&pref=hkredirect&pval=yes&q=http://www.google.com.hk/%3Fgws_rd%3Dcr&ust=1464617980987834&usg=AFQjCNGR_cVYOoekEmZVIUZ3p5llofTySA (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000002B52630>, 'Connection to www.google.com.hk timed out. (connect timeout=1)')) URL: http://www.google.com 
+
+ERROR: 05-30 22:08:37: crawer_logic.py:216 * 16880 [request fail]:http://www.google.com
+ERROR: 05-30 22:09:27: crawer_page_util.py:83 * 18364 HTTPConnectionPool(host='www.google.com.hk', port=80): Max retries exceeded with url: /url?sa=p&hl=zh-CN&pref=hkredirect&pval=yes&q=http://www.google.com.hk/%3Fgws_rd%3Dcr&ust=1464618030549966&usg=AFQjCNHAxWQ46kNkEL0nTceox11tcSykVw (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.HTTPConnection object at 0x00000000029EE630>, 'Connection to www.google.com.hk timed out. (connect timeout=1)')) URL: http://www.google.com 
+
+ERROR: 05-30 22:09:27: crawer_logic.py:217 * 18364 [request fail]:http://www.google.com
+ERROR: 05-30 22:10:37: crawer_page_util.py:83 * 19404 HTTPConnectionPool(host='www.google.com.hk', port=80): Max retries exceeded with url: /url?sa=p&hl=zh-CN&pref=hkredirect&pval=yes&q=http://www.google.com.hk/%3Fgws_rd%3Dcr&ust=1464618101328852&usg=AFQjCNFIx_ZxfkZFXbNnc5PN3F2SLNdgHg (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000002B9E630>, 'Connection to www.google.com.hk timed out. (connect timeout=1)')) URL: http://www.google.com 
+
+ERROR: 05-30 22:10:37: crawer_logic.py:218 * 19404 [request fail]:http://www.google.com
+ERROR: 05-30 22:12:59: crawer_page_util.py:83 * 16556 HTTPConnectionPool(host='www.google.com.hk', port=80): Max retries exceeded with url: /url?sa=p&hl=zh-CN&pref=hkredirect&pval=yes&q=http://www.google.com.hk/%3Fgws_rd%3Dcr&ust=1464618243374301&usg=AFQjCNHsIFjdqsBoxCT41avzi7VT_w9-hQ (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000002A1C630>, 'Connection to www.google.com.hk timed out. (connect timeout=1)')) URL: http://www.google.com 
+
+ERROR: 05-30 22:12:59: crawer_logic.py:223 * 16556 [request fail]:http://www.google.com
+ERROR: 05-30 22:16:59: crawer_page_util.py:83 * 17224 HTTPConnectionPool(host='www.google.com.hk', port=80): Max retries exceeded with url: /url?sa=p&hl=zh-CN&pref=hkredirect&pval=yes&q=http://www.google.com.hk/%3Fgws_rd%3Dcr&ust=1464618482893744&usg=AFQjCNG84NSVhJZmMVZ6NOAF1FWyM2NXXw (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000002B94630>, 'Connection to www.google.com.hk timed out. (connect timeout=1)')) URL: http://www.google.com 
+
+ERROR: 05-30 22:16:59: crawer_logic.py:223 * 17224 [request fail]:http://www.google.com
+ERROR: 05-30 22:17:58: crawer_page_util.py:83 * 18160 HTTPConnectionPool(host='www.google.com.hk', port=80): Max retries exceeded with url: /url?sa=p&hl=zh-CN&pref=hkredirect&pval=yes&q=http://www.google.com.hk/%3Fgws_rd%3Dcr&ust=1464618542018685&usg=AFQjCNGec-ufjbPoFz_C8A3RSP2n257H5Q (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000002B3C630>, 'Connection to www.google.com.hk timed out. (connect timeout=1)')) URL: http://www.google.com 
+
+ERROR: 05-30 22:17:58: crawer_logic.py:223 * 18160 [request fail]:http://www.google.com
+ERROR: 05-30 22:19:09: crawer_page_util.py:83 * 17924 HTTPConnectionPool(host='www.google.com.hk', port=80): Max retries exceeded with url: /url?sa=p&hl=zh-CN&pref=hkredirect&pval=yes&q=http://www.google.com.hk/%3Fgws_rd%3Dcr&ust=1464618613302720&usg=AFQjCNHZKHurKDQizdqHHWTCaAlyKgSSvQ (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000002ADC630>, 'Connection to www.google.com.hk timed out. (connect timeout=1)')) URL: http://www.google.com 
+
+ERROR: 05-30 22:19:09: crawer_logic.py:224 * 17924 [request fail]:http://www.google.com
+ERROR: 05-30 22:20:01: crawer_page_util.py:83 * 17224 HTTPConnectionPool(host='www.google.com.hk', port=80): Max retries exceeded with url: /url?sa=p&hl=zh-CN&pref=hkredirect&pval=yes&q=http://www.google.com.hk/%3Fgws_rd%3Dcr&ust=1464618665012382&usg=AFQjCNETr0kw5GuvGFnWD6wK_4v4sz5BJQ (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000002B5C630>, 'Connection to www.google.com.hk timed out. (connect timeout=1)')) URL: http://www.google.com 
+
+ERROR: 05-30 22:20:01: crawer_logic.py:223 * 17224 [request fail]:http://www.google.com
+ERROR: 05-30 22:21:24: crawer_page_util.py:83 * 18428 HTTPConnectionPool(host='www.google.com.hk', port=80): Max retries exceeded with url: /url?sa=p&hl=zh-CN&pref=hkredirect&pval=yes&q=http://www.google.com.hk/%3Fgws_rd%3Dcr&ust=1464618748035062&usg=AFQjCNFAdxLqvDr3M4ZaQUvwiWvXcAhPGg (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000002B14630>, 'Connection to www.google.com.hk timed out. (connect timeout=1)')) URL: http://www.google.com 
+
+ERROR: 05-30 22:21:24: crawer_logic.py:225 * 18428 [request fail]:http://www.google.com
+ERROR: 05-30 22:22:08: crawer_page_util.py:83 * 19380 HTTPConnectionPool(host='www.google.com.hk', port=80): Max retries exceeded with url: /url?sa=p&hl=zh-CN&pref=hkredirect&pval=yes&q=http://www.google.com.hk/%3Fgws_rd%3Dcr&ust=1464618792260147&usg=AFQjCNFhatzba6vKi7Obc3o6k-WmqJeM5A (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000002AE9630>, 'Connection to www.google.com.hk timed out. (connect timeout=1)')) URL: http://www.google.com 
+
+ERROR: 05-30 22:22:08: crawer_logic.py:224 * 19380 [request fail]:http://www.google.com
+ERROR: 05-30 22:23:26: crawer_page_util.py:83 * 18884 HTTPConnectionPool(host='www.google.com.hk', port=80): Max retries exceeded with url: /url?sa=p&hl=zh-CN&pref=hkredirect&pval=yes&q=http://www.google.com.hk/%3Fgws_rd%3Dcr&ust=1464618869650203&usg=AFQjCNFW0KSzgOTqTgvb2pvHqx9eIbDw4w (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000002A46550>, 'Connection to www.google.com.hk timed out. (connect timeout=1)')) URL: http://www.google.com 
+
+ERROR: 05-30 22:23:26: crawer_logic.py:224 * 18884 [request fail]:http://www.google.com
+ERROR: 05-30 22:27:22: crawer_page_util.py:83 * 15100 HTTPConnectionPool(host='www.google.com.hk', port=80): Max retries exceeded with url: /url?sa=p&hl=zh-CN&pref=hkredirect&pval=yes&q=http://www.google.com.hk/%3Fgws_rd%3Dcr&ust=1464619106092869&usg=AFQjCNFuZiSV3K35Bw1rhWgy6avOGRs7ww (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000002B60630>, 'Connection to www.google.com.hk timed out. (connect timeout=1)')) URL: http://www.google.com 
+
+ERROR: 05-30 22:27:22: crawer_logic.py:225 * 15100 [request fail]:http://www.google.com
+ERROR: 05-30 22:28:11: crawer_page_util.py:83 * 16380 HTTPConnectionPool(host='www.google.com.hk', port=80): Max retries exceeded with url: /url?sa=p&hl=zh-CN&pref=hkredirect&pval=yes&q=http://www.google.com.hk/%3Fgws_rd%3Dcr&ust=1464619155127996&usg=AFQjCNELd4tp8ocE4irgZ0nk0H9w54DI6w (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000002B10630>, 'Connection to www.google.com.hk timed out. (connect timeout=1)')) URL: http://www.google.com 
+
+ERROR: 05-30 22:28:11: crawer_logic.py:224 * 16380 [request fail]:http://www.google.com
+ERROR: 05-30 22:29:18: crawer_page_util.py:83 * 17428 HTTPConnectionPool(host='www.google.com.hk', port=80): Max retries exceeded with url: /url?sa=p&hl=zh-CN&pref=hkredirect&pval=yes&q=http://www.google.com.hk/%3Fgws_rd%3Dcr&ust=1464619221756788&usg=AFQjCNFe44wBt3Yt3E3pWGcAeByZRGuW5Q (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000002BA8630>, 'Connection to www.google.com.hk timed out. (connect timeout=1)')) URL: http://www.google.com 
+
+ERROR: 05-30 22:29:18: crawer_logic.py:220 * 17428 [request fail]:http://www.google.com
+ERROR: 05-30 22:30:05: crawer_page_util.py:83 * 14432 HTTPConnectionPool(host='www.google.com.hk', port=80): Max retries exceeded with url: /url?sa=p&hl=zh-CN&pref=hkredirect&pval=yes&q=http://www.google.com.hk/%3Fgws_rd%3Dcr&ust=1464619268559196&usg=AFQjCNHUoGRDDVOL0iay5sCOE0ztDuFM0w (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000002A88550>, 'Connection to www.google.com.hk timed out. (connect timeout=1)')) URL: http://www.google.com 
+
+ERROR: 05-30 22:30:05: crawer_logic.py:220 * 14432 [request fail]:http://www.google.com
+ERROR: 05-31 14:25:00: crawer_logic.py:64 * 10756 [IOError] read config fail:No section: 'spider'. program will end.
+ERROR: 05-31 14:26:13: crawer_logic.py:78 * 9960 [IOError] read config fail:No section: 'spider'. program will end.
+ERROR: 05-31 14:26:35: crawer_logic.py:78 * 10812 read config fail:No section: 'spider'. program will end.
+ERROR: 05-31 14:27:50: crawer_logic.py:78 * 9508 read config fail:No section: 'spider'. program will end.
+ERROR: 05-31 14:28:06: crawer_logic.py:78 * 2944 read config fail:No section: 'spider'. program will end.
+ERROR: 08-06 14:06:41: crawer_page_util.py:84 * 8868 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/青春 
+
+ERROR: 08-06 14:06:41: crawer_logic.py:150 * 8868 [current depth]:1[request fail]:https://movie.douban.com/tag/青春
+ERROR: 08-06 14:06:44: crawer_page_util.py:84 * 8868 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/犯罪 
+
+ERROR: 08-06 14:06:44: crawer_logic.py:150 * 8868 [current depth]:1[request fail]:https://movie.douban.com/tag/犯罪
+ERROR: 08-06 14:06:46: crawer_page_util.py:84 * 8868 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/惊悚 
+
+ERROR: 08-06 14:06:46: crawer_logic.py:150 * 8868 [current depth]:1[request fail]:https://movie.douban.com/tag/惊悚
+ERROR: 08-06 14:06:47: crawer_page_util.py:84 * 8868 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/文艺 
+
+ERROR: 08-06 14:06:47: crawer_logic.py:150 * 8868 [current depth]:1[request fail]:https://movie.douban.com/tag/文艺
+ERROR: 08-06 14:06:49: crawer_page_util.py:84 * 8868 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/搞笑 
+
+ERROR: 08-06 14:06:49: crawer_logic.py:150 * 8868 [current depth]:1[request fail]:https://movie.douban.com/tag/搞笑
+ERROR: 08-06 14:06:50: crawer_page_util.py:84 * 8868 'ascii' codec can't encode characters in position 30-32: ordinal not in range(128) URL: https://movie.douban.com/tag/纪录片 
+
+ERROR: 08-06 14:06:50: crawer_logic.py:150 * 8868 [current depth]:1[request fail]:https://movie.douban.com/tag/纪录片
+ERROR: 08-06 14:06:52: crawer_page_util.py:84 * 8868 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/励志 
+
+ERROR: 08-06 14:07:01: crawer_logic.py:150 * 8868 [current depth]:1[request fail]:https://movie.douban.com/tag/励志
+ERROR: 08-06 14:07:31: crawer_page_util.py:84 * 14912 'ascii' codec can't encode characters in position 29-30: ordinal not in range(128) URL: https://movie.douban.com/tag/青春 
+
+ERROR: 08-06 14:07:31: crawer_logic.py:150 * 14912 [current depth]:1[request fail]:https://movie.douban.com/tag/青春
+ERROR: 08-06 14:07:33: crawer_page_util.py:84 * 14912 'ascii' codec can't encode characters in position 29-30: ordinal not in range(128) URL: https://movie.douban.com/tag/犯罪 
+
+ERROR: 08-06 14:07:33: crawer_logic.py:150 * 14912 [current depth]:1[request fail]:https://movie.douban.com/tag/犯罪
+ERROR: 08-06 14:07:34: crawer_page_util.py:84 * 14912 'ascii' codec can't encode characters in position 29-30: ordinal not in range(128) URL: https://movie.douban.com/tag/惊悚 
+
+ERROR: 08-06 14:07:34: crawer_logic.py:150 * 14912 [current depth]:1[request fail]:https://movie.douban.com/tag/惊悚
+ERROR: 08-06 14:08:03: crawer_page_util.py:84 * 8076 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/青春 
+
+ERROR: 08-06 14:08:03: crawer_logic.py:150 * 8076 [current depth]:1[request fail]:https://movie.douban.com/tag/青春
+ERROR: 08-06 14:08:05: crawer_page_util.py:84 * 8076 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/犯罪 
+
+ERROR: 08-06 14:08:05: crawer_logic.py:150 * 8076 [current depth]:1[request fail]:https://movie.douban.com/tag/犯罪
+ERROR: 08-06 14:08:06: crawer_page_util.py:84 * 8076 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/惊悚 
+
+ERROR: 08-06 14:08:06: crawer_logic.py:150 * 8076 [current depth]:1[request fail]:https://movie.douban.com/tag/惊悚
+ERROR: 08-06 14:08:08: crawer_page_util.py:84 * 8076 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/文艺 
+
+ERROR: 08-06 14:08:08: crawer_logic.py:150 * 8076 [current depth]:1[request fail]:https://movie.douban.com/tag/文艺
+ERROR: 08-06 14:08:10: crawer_page_util.py:84 * 8076 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/搞笑 
+
+ERROR: 08-06 14:08:10: crawer_logic.py:150 * 8076 [current depth]:1[request fail]:https://movie.douban.com/tag/搞笑
+ERROR: 08-06 14:08:11: crawer_page_util.py:84 * 8076 'ascii' codec can't encode characters in position 30-32: ordinal not in range(128) URL: https://movie.douban.com/tag/纪录片 
+
+ERROR: 08-06 14:08:17: crawer_logic.py:150 * 8076 [current depth]:1[request fail]:https://movie.douban.com/tag/纪录片
+ERROR: 08-06 14:29:27: crawer_page_util.py:91 * 2216 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/青春 
+
+ERROR: 08-06 14:29:27: crawer_logic.py:151 * 2216 [current depth]:1[request fail]:https://movie.douban.com/tag/青春
+ERROR: 08-06 14:29:28: crawer_page_util.py:91 * 2216 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/犯罪 
+
+ERROR: 08-06 14:29:28: crawer_logic.py:151 * 2216 [current depth]:1[request fail]:https://movie.douban.com/tag/犯罪
+ERROR: 08-06 14:29:30: crawer_page_util.py:91 * 2216 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/惊悚 
+
+ERROR: 08-06 14:29:30: crawer_logic.py:151 * 2216 [current depth]:1[request fail]:https://movie.douban.com/tag/惊悚
+ERROR: 08-06 14:29:31: crawer_page_util.py:91 * 2216 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/文艺 
+
+ERROR: 08-06 14:29:31: crawer_logic.py:151 * 2216 [current depth]:1[request fail]:https://movie.douban.com/tag/文艺
+ERROR: 08-06 14:29:33: crawer_page_util.py:91 * 2216 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/搞笑 
+
+ERROR: 08-06 14:29:33: crawer_logic.py:151 * 2216 [current depth]:1[request fail]:https://movie.douban.com/tag/搞笑
+ERROR: 08-06 14:29:34: crawer_page_util.py:91 * 2216 'ascii' codec can't encode characters in position 30-32: ordinal not in range(128) URL: https://movie.douban.com/tag/纪录片 
+
+ERROR: 08-06 14:29:34: crawer_logic.py:151 * 2216 [current depth]:1[request fail]:https://movie.douban.com/tag/纪录片
+ERROR: 08-06 14:29:36: crawer_page_util.py:91 * 2216 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/励志 
+
+ERROR: 08-06 14:29:36: crawer_logic.py:151 * 2216 [current depth]:1[request fail]:https://movie.douban.com/tag/励志
+ERROR: 08-06 14:33:48: crawer_page_util.py:91 * 6384 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/青春 
+
+ERROR: 08-06 14:33:48: crawer_logic.py:151 * 6384 [current depth]:1[request fail]:https://movie.douban.com/tag/青春
+ERROR: 08-06 14:33:49: crawer_page_util.py:91 * 6384 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/犯罪 
+
+ERROR: 08-06 14:33:49: crawer_logic.py:151 * 6384 [current depth]:1[request fail]:https://movie.douban.com/tag/犯罪
+ERROR: 08-06 14:33:51: crawer_page_util.py:91 * 6384 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/惊悚 
+
+ERROR: 08-06 14:33:51: crawer_logic.py:151 * 6384 [current depth]:1[request fail]:https://movie.douban.com/tag/惊悚
+ERROR: 08-06 14:33:52: crawer_page_util.py:91 * 6384 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/文艺 
+
+ERROR: 08-06 14:33:52: crawer_logic.py:151 * 6384 [current depth]:1[request fail]:https://movie.douban.com/tag/文艺
+ERROR: 08-06 14:33:54: crawer_page_util.py:91 * 6384 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/搞笑 
+
+ERROR: 08-06 14:33:54: crawer_logic.py:151 * 6384 [current depth]:1[request fail]:https://movie.douban.com/tag/搞笑
+ERROR: 08-06 14:33:55: crawer_page_util.py:91 * 6384 'ascii' codec can't encode characters in position 30-32: ordinal not in range(128) URL: https://movie.douban.com/tag/纪录片 
+
+ERROR: 08-06 14:33:55: crawer_logic.py:151 * 6384 [current depth]:1[request fail]:https://movie.douban.com/tag/纪录片
+ERROR: 08-06 14:33:57: crawer_page_util.py:91 * 6384 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/励志 
+
+ERROR: 08-06 14:33:57: crawer_logic.py:151 * 6384 [current depth]:1[request fail]:https://movie.douban.com/tag/励志
+ERROR: 08-06 14:33:58: crawer_page_util.py:91 * 6384 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/恐怖 
+
+ERROR: 08-06 14:33:58: crawer_logic.py:151 * 6384 [current depth]:1[request fail]:https://movie.douban.com/tag/恐怖
+ERROR: 08-06 14:34:00: crawer_page_util.py:91 * 6384 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/战争 
+
+ERROR: 08-06 14:34:00: crawer_logic.py:151 * 6384 [current depth]:1[request fail]:https://movie.douban.com/tag/战争
+ERROR: 08-06 14:34:01: crawer_page_util.py:91 * 6384 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/短片 
+
+ERROR: 08-06 14:34:01: crawer_logic.py:151 * 6384 [current depth]:1[request fail]:https://movie.douban.com/tag/短片
+ERROR: 08-06 14:34:03: crawer_page_util.py:91 * 6384 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/美国 
+
+ERROR: 08-06 14:34:03: crawer_logic.py:151 * 6384 [current depth]:1[request fail]:https://movie.douban.com/tag/美国
+ERROR: 08-06 14:34:03: crawer_page_util.py:91 * 7880 HTTPSConnectionPool(host='movie.douban.com', port=443): Read timed out. (read timeout=1) URL: https://movie.douban.com/subject/24827387/cinema/ 
+
+ERROR: 08-06 14:34:03: crawer_logic.py:151 * 7880 [current depth]:1[request fail]:https://movie.douban.com/subject/24827387/cinema/
+ERROR: 08-06 14:34:04: crawer_page_util.py:91 * 6384 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/日本 
+
+ERROR: 08-06 14:34:04: crawer_logic.py:151 * 6384 [current depth]:1[request fail]:https://movie.douban.com/tag/日本
+ERROR: 08-06 14:34:06: crawer_page_util.py:91 * 6384 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/香港 
+
+ERROR: 08-06 14:34:06: crawer_logic.py:151 * 6384 [current depth]:1[request fail]:https://movie.douban.com/tag/香港
+ERROR: 08-06 14:34:07: crawer_page_util.py:91 * 6384 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/英国 
+
+ERROR: 08-06 14:34:07: crawer_logic.py:151 * 6384 [current depth]:1[request fail]:https://movie.douban.com/tag/英国
+ERROR: 08-06 14:34:09: crawer_page_util.py:91 * 6384 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/中国 
+
+ERROR: 08-06 14:34:09: crawer_logic.py:151 * 6384 [current depth]:1[request fail]:https://movie.douban.com/tag/中国
+ERROR: 08-06 14:34:10: crawer_page_util.py:91 * 7880 HTTPSConnectionPool(host='movie.douban.com', port=443): Read timed out. (read timeout=1) URL: https://movie.douban.com/subject/25843976/cinema/ 
+
+ERROR: 08-06 14:34:10: crawer_logic.py:151 * 7880 [current depth]:1[request fail]:https://movie.douban.com/subject/25843976/cinema/
+ERROR: 08-06 14:34:10: crawer_page_util.py:91 * 6384 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/法国 
+
+ERROR: 08-06 14:34:10: crawer_logic.py:151 * 6384 [current depth]:1[request fail]:https://movie.douban.com/tag/法国
+ERROR: 08-06 14:34:12: crawer_page_util.py:91 * 6384 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/韩国 
+
+ERROR: 08-06 14:34:12: crawer_logic.py:151 * 6384 [current depth]:1[request fail]:https://movie.douban.com/tag/韩国
+ERROR: 08-06 14:34:14: crawer_page_util.py:91 * 6384 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/台湾 
+
+ERROR: 08-06 14:34:14: crawer_logic.py:151 * 6384 [current depth]:1[request fail]:https://movie.douban.com/tag/台湾
+ERROR: 08-06 14:34:14: crawer_page_util.py:91 * 7880 HTTPSConnectionPool(host='movie.douban.com', port=443): Read timed out. (read timeout=1) URL: https://movie.douban.com/subject/21817627/ 
+
+ERROR: 08-06 14:34:14: crawer_logic.py:151 * 7880 [current depth]:1[request fail]:https://movie.douban.com/subject/21817627/
+ERROR: 08-06 14:34:15: crawer_page_util.py:91 * 6384 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/德国 
+
+ERROR: 08-06 14:34:15: crawer_logic.py:151 * 6384 [current depth]:1[request fail]:https://movie.douban.com/tag/德国
+ERROR: 08-06 14:34:17: crawer_page_util.py:91 * 6384 'ascii' codec can't encode characters in position 30-32: ordinal not in range(128) URL: https://movie.douban.com/tag/意大利 
+
+ERROR: 08-06 14:34:17: crawer_logic.py:151 * 6384 [current depth]:1[request fail]:https://movie.douban.com/tag/意大利
+ERROR: 08-06 14:34:19: crawer_page_util.py:91 * 7880 HTTPSConnectionPool(host='movie.douban.com', port=443): Read timed out. (read timeout=1) URL: https://movie.douban.com/subject/21817627/cinema/ 
+
+ERROR: 08-06 14:34:19: crawer_logic.py:151 * 7880 [current depth]:1[request fail]:https://movie.douban.com/subject/21817627/cinema/
+ERROR: 08-06 14:34:23: crawer_page_util.py:91 * 12472 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/爱情 
+
+ERROR: 08-06 14:34:23: crawer_logic.py:151 * 12472 [current depth]:1[request fail]:https://movie.douban.com/tag/爱情
+ERROR: 08-06 14:34:24: crawer_page_util.py:91 * 12472 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/喜剧 
+
+ERROR: 08-06 14:34:24: crawer_logic.py:151 * 12472 [current depth]:1[request fail]:https://movie.douban.com/tag/喜剧
+ERROR: 08-06 14:34:26: crawer_page_util.py:91 * 12472 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/动画 
+
+ERROR: 08-06 14:34:26: crawer_logic.py:151 * 12472 [current depth]:1[request fail]:https://movie.douban.com/tag/动画
+ERROR: 08-06 14:34:26: crawer_page_util.py:91 * 7880 HTTPSConnectionPool(host='movie.douban.com', port=443): Read timed out. (read timeout=1) URL: https://movie.douban.com/subject/26394441/cinema/ 
+
+ERROR: 08-06 14:34:26: crawer_logic.py:151 * 7880 [current depth]:1[request fail]:https://movie.douban.com/subject/26394441/cinema/
+ERROR: 08-06 14:34:28: crawer_page_util.py:91 * 12472 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/剧情 
+
+ERROR: 08-06 14:34:28: crawer_logic.py:151 * 12472 [current depth]:1[request fail]:https://movie.douban.com/tag/剧情
+ERROR: 08-06 14:34:29: crawer_page_util.py:91 * 12472 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/科幻 
+
+ERROR: 08-06 14:34:29: crawer_logic.py:151 * 12472 [current depth]:1[request fail]:https://movie.douban.com/tag/科幻
+ERROR: 08-06 14:34:30: crawer_page_util.py:91 * 6384 'ascii' codec can't encode characters in position 42-43: ordinal not in range(128) URL: https://www.douban.com/group/explore?tag=购物 
+
+ERROR: 08-06 14:34:30: crawer_logic.py:151 * 6384 [current depth]:1[request fail]:https://www.douban.com/group/explore?tag=购物
+ERROR: 08-06 14:34:31: crawer_page_util.py:91 * 12472 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/动作 
+
+ERROR: 08-06 14:34:31: crawer_logic.py:151 * 12472 [current depth]:1[request fail]:https://movie.douban.com/tag/动作
+ERROR: 08-06 14:34:32: crawer_page_util.py:91 * 8632 HTTPSConnectionPool(host='www.douban.com', port=443): Read timed out. (read timeout=1) URL: http://www.douban.com/group/explore/life 
+
+ERROR: 08-06 14:34:32: crawer_logic.py:151 * 8632 [current depth]:1[request fail]:http://www.douban.com/group/explore/life
+ERROR: 08-06 14:34:32: crawer_page_util.py:91 * 6384 'ascii' codec can't encode characters in position 42-43: ordinal not in range(128) URL: https://www.douban.com/group/explore?tag=淘宝 
+
+ERROR: 08-06 14:34:32: crawer_logic.py:151 * 6384 [current depth]:1[request fail]:https://www.douban.com/group/explore?tag=淘宝
+ERROR: 08-06 14:34:32: crawer_page_util.py:91 * 12472 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/经典 
+
+ERROR: 08-06 14:34:32: crawer_logic.py:151 * 12472 [current depth]:1[request fail]:https://movie.douban.com/tag/经典
+ERROR: 08-06 14:34:33: crawer_page_util.py:91 * 7880 HTTPSConnectionPool(host='movie.douban.com', port=443): Read timed out. (read timeout=1) URL: https://movie.douban.com/subject/24529353/cinema/ 
+
+ERROR: 08-06 14:34:33: crawer_logic.py:151 * 7880 [current depth]:1[request fail]:https://movie.douban.com/subject/24529353/cinema/
+ERROR: 08-06 14:34:33: crawer_page_util.py:91 * 6384 'ascii' codec can't encode characters in position 42-43: ordinal not in range(128) URL: https://www.douban.com/group/explore?tag=二手 
+
+ERROR: 08-06 14:34:33: crawer_logic.py:151 * 6384 [current depth]:1[request fail]:https://www.douban.com/group/explore?tag=二手
+ERROR: 08-06 14:34:34: crawer_page_util.py:91 * 12472 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/悬疑 
+
+ERROR: 08-06 14:34:34: crawer_logic.py:151 * 12472 [current depth]:1[request fail]:https://movie.douban.com/tag/悬疑
+ERROR: 08-06 14:34:35: crawer_page_util.py:91 * 8632 'ascii' codec can't encode characters in position 42-43: ordinal not in range(128) URL: https://www.douban.com/group/explore?tag=兴趣 
+
+ERROR: 08-06 14:34:35: crawer_logic.py:151 * 8632 [current depth]:1[request fail]:https://www.douban.com/group/explore?tag=兴趣
+ERROR: 08-06 14:34:35: crawer_page_util.py:91 * 6384 'ascii' codec can't encode characters in position 42-43: ordinal not in range(128) URL: https://www.douban.com/group/explore?tag=团购 
+
+ERROR: 08-06 14:34:35: crawer_logic.py:151 * 6384 [current depth]:1[request fail]:https://www.douban.com/group/explore?tag=团购
+ERROR: 08-06 14:34:35: crawer_page_util.py:91 * 12472 'ascii' codec can't encode characters in position 42-43: ordinal not in range(128) URL: https://www.douban.com/group/explore?tag=人文 
+
+ERROR: 08-06 14:34:35: crawer_logic.py:151 * 12472 [current depth]:1[request fail]:https://www.douban.com/group/explore?tag=人文
+ERROR: 08-06 14:34:36: crawer_page_util.py:91 * 8632 'ascii' codec can't encode characters in position 42-43: ordinal not in range(128) URL: https://www.douban.com/group/explore?tag=旅行 
+
+ERROR: 08-06 14:34:37: crawer_page_util.py:91 * 6384 'ascii' codec can't encode characters in position 42-43: ordinal not in range(128) URL: https://www.douban.com/group/explore?tag=数码 
+
+ERROR: 08-06 14:34:37: crawer_page_util.py:91 * 12472 'ascii' codec can't encode characters in position 42-43: ordinal not in range(128) URL: https://www.douban.com/group/explore?tag=社科 
+
+ERROR: 08-06 14:34:39: crawer_page_util.py:91 * 7880 HTTPSConnectionPool(host='movie.douban.com', port=443): Read timed out. (read timeout=1) URL: https://movie.douban.com/subject/25850122/cinema/ 
+
+ERROR: 08-06 14:34:58: crawer_logic.py:151 * 8632 [current depth]:1[request fail]:https://www.douban.com/group/explore?tag=旅行
+ERROR: 08-06 14:34:58: crawer_logic.py:151 * 6384 [current depth]:1[request fail]:https://www.douban.com/group/explore?tag=数码
+ERROR: 08-06 14:34:58: crawer_logic.py:151 * 12472 [current depth]:1[request fail]:https://www.douban.com/group/explore?tag=社科
+ERROR: 08-06 14:34:58: crawer_logic.py:151 * 7880 [current depth]:1[request fail]:https://movie.douban.com/subject/25850122/cinema/
+ERROR: 08-06 14:40:21: crawer_page_util.py:91 * 3408 'ascii' codec can't encode characters in position 30-31: ordinal not in range(128) URL: https://movie.douban.com/tag/青春 
+
+ERROR: 08-06 14:40:21: crawer_logic.py:153 * 3408 [current depth]:1[request fail]:https://movie.douban.com/tag/青春
