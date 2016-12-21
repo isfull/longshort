@@ -91,7 +91,8 @@ class Crawler(object):
 
     def start(self):
         # check output dir exist or not
-
+        if os.path.exists(self.out_put) != True:
+            os.makedirs(self.out_put)
         """
         Start the crawler
         """
