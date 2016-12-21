@@ -169,7 +169,7 @@ class Crawler(object):
         """
         url, page_source = webPage.get_data()
         try:
-            _do_save_page_file(url, page_source)
+            self._do_save_page_file(url, page_source)
         except (IOError, IndexError, UnicodeEncodeError, TypeError, Exception) as e:
             log.error('[URL]: %s ' % url + traceback.format_exc())
             log.error(e)
