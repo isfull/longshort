@@ -47,6 +47,7 @@ class PageUtil(object):
         self._url = url
         self._page_source = None
         self._web_timeout = timeout
+        self._headers = ""
 
     def init_param(self):
         """

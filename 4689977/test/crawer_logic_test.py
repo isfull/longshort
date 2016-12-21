@@ -289,6 +289,8 @@ class CrawerTestCase(unittest.TestCase):
         webpage._page_source = page_source
         webpage._headers = headers
         out_put_local = self.crawer.out_put
+        if os.path.exists(out_put_local) != True:
+            os.makedirs(out_put_local)
         self.crawer.out_put = "./test/test" + self.crawer.out_put.replace('.', '')
         self.crawer._save_page_to_file(webpage) 
         self.assertEquals(True, len(os.listdir(out_put_local)) > 0)     
@@ -341,6 +343,8 @@ class CrawerTestCase(unittest.TestCase):
         webpage._page_source = page_source
         webpage._headers = headers
         out_put_local = self.crawer.out_put
+        if os.path.exists(out_put_local) != True:
+            os.makedirs(out_put_local)
         self.crawer.out_put = "./test/test" + self.crawer.out_put.replace('.', '')        
         self.crawer.keyword = 'taobao'
         self.crawer._save_page_to_file(webpage)
