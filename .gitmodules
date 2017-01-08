@@ -1,0 +1,3 @@
+[submodule "goodcoder/word_parse/toft"]
+	path = goodcoder/word_parse/toft
+	url = https://github.com/chen3feng/toft.git
