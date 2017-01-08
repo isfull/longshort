@@ -46,6 +46,7 @@ class CrawerPageUtilTestCase(unittest.TestCase):
         }
         self.timeout = 1 
         self.crawer = crawer_page_util.PageUtil(self.url, self.timeout)  
+        self.crawer.init_param()
        
     def tearDown(self):
         self.webpage = None

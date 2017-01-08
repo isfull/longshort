@@ -58,7 +58,8 @@ class Crawler(object):
             thread_pool: a instance of thread pool
             visited_hrefs: a set of urls that already visited
             unvisited_hrefs: a queue of urls that the the crawler need to visit
-            is_crawling: the flag that the crawler is working or not. False: Not working True: Working
+            is_crawling: the flag that the crawler is working or not. 
+                False: Not working True: Working
             out_put: the path to store the page source of url
         
         Returns:
@@ -89,12 +90,14 @@ class Crawler(object):
             return False
 
     def start(self):
+        # check output dir exist or not
+        if os.path.exists(self.out_put) != True:
+            os.makedirs(self.out_put)
         """
         Start the crawler
         """
         log.info('Start Crawling\n')
         self.is_crawling = True
-        #self.thread_pool.startThreads() 
         while self.current_depth < self.depth:
             # Make threads in thread pool to do the task at the same time
             # Operation is not block
@@ -119,7 +122,7 @@ class Crawler(object):
     def _assign_current_depth_tasks(self):
         # Url of current level need to visit
         current_unvisited_url_count = len(self.unvisited_hrefs)
-        self.currentlevel_unvisited_count = ( 
+        self.currentlevel_unvisited_count = (
             self.currentlevel_unvisited_count + current_unvisited_url_count
             )
         urls = []
@@ -155,32 +158,43 @@ class Crawler(object):
         time.sleep(self.interval)
         
     def _save_page_to_file(self, webPage):
+        """
+        save page txt to file if url match the pattern
+        
+        Args:
+            webPage: parsed html data
+    
+        Returns:
+            None
+        """
         url, page_source = webPage.get_data()
         try:
-            if self.keyword:
-                # python re has a bug. Use [a-zA-z0-9]*  instead
-                if re.search(self.keyword, url, re.IGNORECASE):
-                    log.info("[good case]:" + url)
-                    # Each page saved as a independent file, use the url to name it
-                    fname = urllib.quote_plus(url)  
-                    # Deal with the long path problem
-                    page_file = self.out_put + fname
-                    if page_file[0] == '.':
-                        base = os.path.split(os.path.abspath(__file__))[0]
-                        page_file = base + page_file[1:]    
-                        if len(page_file) > 256:
-                            page_file = page_file[:255]
-                    else:
-                        if len(page_file) > 256:
-                            page_file = page_file[:255]
-                    with open(page_file, 'w') as fp:
-                        fp.write(page_source.encode('utf-8'))
-                        fp.flush()
-                else:
-                    log.info("[bad case]" + url)
-            else:
-                ## Each page saved as a independent file, use the url to name it
-                fname = urllib.quote_plus(url)
+            self._do_save_page_file(url, page_source)
+        except (IOError, IndexError, UnicodeEncodeError, TypeError, Exception) as e:
+            log.error('[URL]: %s ' % url + traceback.format_exc())
+            log.error(e)
+
+    def _do_save_page_file(self, url, page_source):
+        """
+        save page txt to file if url match the pattern
+        
+        Args:
+            url: url
+            page_source: html txt string
+    
+        Returns:
+            None
+    
+        Raises:
+            IOError, IndexError, UnicodeEncodeError, TypeError, Exception:
+                An error occurred analyse html txt.
+        """
+        if self.keyword:
+            # python re has a bug. Use [a-zA-z0-9]*  instead
+            if re.search(self.keyword, url, re.IGNORECASE):
+                log.info("[good case]:" + url)
+                # Each page saved as a independent file, use the url to name it
+                fname = urllib.quote_plus(url)  
                 # Deal with the long path problem
                 page_file = self.out_put + fname
                 if page_file[0] == '.':
@@ -194,9 +208,24 @@ class Crawler(object):
                 with open(page_file, 'w') as fp:
                     fp.write(page_source.encode('utf-8'))
                     fp.flush()
-        except (IOError, IndexError, UnicodeEncodeError, TypeError, Exception) as e:
-            log.error('[URL]: %s ' % url + traceback.format_exc())
-            log.error(e)
+            else:
+                log.info("[bad case]" + url)
+        else:
+            ## Each page saved as a independent file, use the url to name it
+            fname = urllib.quote_plus(url)
+            # Deal with the long path problem
+            page_file = self.out_put + fname
+            if page_file[0] == '.':
+                base = os.path.split(os.path.abspath(__file__))[0]
+                page_file = base + page_file[1:]    
+                if len(page_file) > 256:
+                    page_file = page_file[:255]
+            else:
+                if len(page_file) > 256:
+                    page_file = page_file[:255]
+            with open(page_file, 'w') as fp:
+                fp.write(page_source.encode('utf-8'))
+                fp.flush()
 
     def _add_unvisited_hrefs(self, webPage):
         """

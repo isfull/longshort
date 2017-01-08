@@ -47,8 +47,8 @@ class PageUtil(object):
         self._url = url
         self._page_source = None
         self._web_timeout = timeout
+        self._headers = ""
 
-    
     def init_param(self):
         """
         1. ensure url start with "http". 
@@ -112,8 +112,8 @@ class PageUtil(object):
             'Accept-Encoding': 'gzip,deflate,sdch',
             'Accept-Language': 'en-US,en;q=0.8',
             'Connection': 'keep-alive',
-            'User-Agent': "'"+user_agent+"'",
-            'Referer': "'"+self._url+"'",
+            'User-Agent': "'" + user_agent + "'",
+            'Referer': "'" + self._url + "'",
         }
         self._headers.update(kargs)
 

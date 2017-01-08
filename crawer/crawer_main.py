@@ -23,26 +23,30 @@ import crawer_logic
 def get_parser():
     """
         Get arg parser object
-        
         Args:
             None
-        
         Returns:
             arg parser object
     """
     configpath = r'config.ini'
-    parser = argparse.ArgumentParser(description = 'A mini crawer', 
-                                              version = "mini_crawer 1.0.0") 
-    parser.add_argument('-c', type = str, metavar = 'FILE', 
-                                 default = configpath, 
-                                 dest = 'cfg_file',
-                                 help = 'The Config file path. defalut config.ini')
-    parser.add_argument('-l', type = int, metavar = 'LOGLEVEL', 
-                                 default = 10, 
-                                 dest = 'loglevel',
-                                 help = 'log level. default info(10)')
+    parser = argparse.ArgumentParser(
+        description = 'A mini crawer',
+        version = "mini_crawer 1.0.0")
+    parser.add_argument(
+        '-c',
+        type = str,
+        metavar = 'FILE',
+        default = configpath,
+        dest = 'cfg_file',
+        help = 'The Config file path. defalut config.ini')
+    parser.add_argument(
+        '-l',
+        type = int,
+        metavar = 'LOGLEVEL',
+        default = 10,
+        dest = 'loglevel',
+        help = 'log level. default info(10)')
     return parser
-    #self.args = self.parser.parse_args(str_args)
 
 if __name__ == '__main__':
     arg_parser = get_parser()

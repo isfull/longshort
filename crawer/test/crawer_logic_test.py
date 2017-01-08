@@ -96,23 +96,23 @@ class CrawerTestCase(unittest.TestCase):
             None
         """
         page_source = u"""
-                <!DOCTYPE html>
-                    <html>
-                        <head>
-                            <meta charset=utf8>
-                            <title>Crawl Me</title>
-                        </head>
-                        <body>
-                            <ul>
-                                <li><a href=page1.html>page 1</a></li>
-                                <li><a href="page2.html">page 2</a></li>
-                                <li><a href='page3.html'>page 3</a></li>
-                                <li><a href='mirror/index.html'>mirror</a></li>
-                                <li><a href='javascript:location.href="page4.html"'>page 4</a></li>
-                            </ul>
-                        </body>
-                    </html>
-                """
+            <!DOCTYPE html>
+                <html>
+                    <head>
+                        <meta charset=utf8>
+                        <title>Crawl Me</title>
+                    </head>
+                    <body>
+                        <ul>
+                            <li><a href=page1.html>page 1</a></li>
+                            <li><a href="page2.html">page 2</a></li>
+                            <li><a href='page3.html'>page 3</a></li>
+                            <li><a href='mirror/index.html'>mirror</a></li>
+                            <li><a href='javascript:location.href="page4.html"'>page 4</a></li>
+                        </ul>
+                    </body>
+                </html>
+            """
         url = "http://pycm.baidu.com:8081"
         user_agent = 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.4 (KHTML, like Gecko)'
         user_agent = user_agent + ' Chrome/22.0.1229.79 Safari/537.4'
@@ -148,23 +148,23 @@ class CrawerTestCase(unittest.TestCase):
             None
         """       
         page_source = u"""
-                <!DOCTYPE html>
-                    <html>
-                        <head>
-                            <meta charset=utf8>
-                            <title>Crawl Me</title>
-                        </head>
-                        <body>
-                            <ul>
-                                <li><a href=page1.html>page 1</a></li>
-                                <li><a href="page2.html">page 2</a></li>
-                                <li><a href='page3.html'>page 3</a></li>
-                                <li><a href='mirror/index.html'>mirror</a></li>
-                                <li><a href='javascript:location.href="page4.html"'>page 4</a></li>
-                            </ul>
-                        </body>
-                    </html>
-                """
+            <!DOCTYPE html>
+                <html>
+                    <head>
+                        <meta charset=utf8>
+                        <title>Crawl Me</title>
+                    </head>
+                    <body>
+                        <ul>
+                            <li><a href=page1.html>page 1</a></li>
+                            <li><a href="page2.html">page 2</a></li>
+                            <li><a href='page3.html'>page 3</a></li>
+                            <li><a href='mirror/index.html'>mirror</a></li>
+                            <li><a href='javascript:location.href="page4.html"'>page 4</a></li>
+                        </ul>
+                    </body>
+                </html>
+            """
         url = "http://pycm.baidu.com:8081/test.gif"
         user_agent = 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.4 (KHTML, like Gecko)'
         user_agent = user_agent + ' Chrome/22.0.1229.79 Safari/537.4'
@@ -201,23 +201,23 @@ class CrawerTestCase(unittest.TestCase):
             None
         """ 
         page_source = u"""
-                <!DOCTYPE html>
-                    <html>
-                        <head>
-                            <meta charset=utf8>
-                            <title>Crawl Me</title>
-                        </head>
-                        <body>
-                            <ul>
-                                <li><a href=page1.html>page 1</a></li>
-                                <li><a href="page2.html">page 2</a></li>
-                                <li><a href='page3.html'>page 3</a></li>
-                                <li><a href='mirror/index.html'>mirror</a></li>
-                                <li><a href='javascript:location.href="page4.html"'>page 4</a></li>
-                            </ul>
-                        </body>
-                    </html>
-                """
+            <!DOCTYPE html>
+                <html>
+                    <head>
+                        <meta charset=utf8>
+                        <title>Crawl Me</title>
+                    </head>
+                    <body>
+                        <ul>
+                            <li><a href=page1.html>page 1</a></li>
+                            <li><a href="page2.html">page 2</a></li>
+                            <li><a href='page3.html'>page 3</a></li>
+                            <li><a href='mirror/index.html'>mirror</a></li>
+                            <li><a href='javascript:location.href="page4.html"'>page 4</a></li>
+                        </ul>
+                    </body>
+                </html>
+            """
         url = "http://pycm.baidu.com:8081"
         user_agent = 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.4 (KHTML, like Gecko)'
         user_agent = user_agent + ' Chrome/22.0.1229.79 Safari/537.4'
@@ -253,23 +253,23 @@ class CrawerTestCase(unittest.TestCase):
             None
         """ 
         page_source = u"""
-                <!DOCTYPE html>
-                    <html>
-                        <head>
-                            <meta charset=utf8>
-                            <title>Crawl Me</title>
-                        </head>
-                        <body>
-                            <ul>
-                                <li><a href=page1.html>page 1</a></li>
-                                <li><a href="page2.html">page 2</a></li>
-                                <li><a href='page3.html'>page 3</a></li>
-                                <li><a href='mirror/index.html'>mirror</a></li>
-                                <li><a href='javascript:location.href="page4.html"'>page 4</a></li>
-                            </ul>
-                        </body>
-                    </html>
-                """
+            <!DOCTYPE html>
+                <html>
+                    <head>
+                        <meta charset=utf8>
+                        <title>Crawl Me</title>
+                    </head>
+                    <body>
+                        <ul>
+                            <li><a href=page1.html>page 1</a></li>
+                            <li><a href="page2.html">page 2</a></li>
+                            <li><a href='page3.html'>page 3</a></li>
+                            <li><a href='mirror/index.html'>mirror</a></li>
+                            <li><a href='javascript:location.href="page4.html"'>page 4</a></li>
+                        </ul>
+                    </body>
+                </html>
+            """
         url = "http://redirect.simba.taobao.com/rd?c=un&w=unionpost&f=http%3A%2F%2Fwww.taobao.com"
         url = url + "%2Fgo%2Fact%2Fmmbd%2Fhd-home.php%3Fpid%3Dmm_15890324_2192376_23736178%26uni"
         url = url + "d%3D&k=b93d93a3e5c25156&p=mm_15890324_2192376_23736178"
@@ -289,6 +289,8 @@ class CrawerTestCase(unittest.TestCase):
         webpage._page_source = page_source
         webpage._headers = headers
         out_put_local = self.crawer.out_put
+        if os.path.exists(out_put_local) != True:
+            os.makedirs(out_put_local)
         self.crawer.out_put = "./test/test" + self.crawer.out_put.replace('.', '')
         self.crawer._save_page_to_file(webpage) 
         self.assertEquals(True, len(os.listdir(out_put_local)) > 0)     
@@ -305,23 +307,23 @@ class CrawerTestCase(unittest.TestCase):
             None
         """ 
         page_source = u"""
-                <!DOCTYPE html>
-                    <html>
-                        <head>
-                            <meta charset=utf8>
-                            <title>Crawl Me</title>
-                        </head>
-                        <body>
-                            <ul>
-                                <li><a href=page1.html>page 1</a></li>
-                                <li><a href="page2.html">page 2</a></li>
-                                <li><a href='page3.html'>page 3</a></li>
-                                <li><a href='mirror/index.html'>mirror</a></li>
-                                <li><a href='javascript:location.href="page4.html"'>page 4</a></li>
-                            </ul>
-                        </body>
-                    </html>
-                """
+            <!DOCTYPE html>
+                <html>
+                    <head>
+                        <meta charset=utf8>
+                        <title>Crawl Me</title>
+                    </head>
+                    <body>
+                        <ul>
+                            <li><a href=page1.html>page 1</a></li>
+                            <li><a href="page2.html">page 2</a></li>
+                            <li><a href='page3.html'>page 3</a></li>
+                            <li><a href='mirror/index.html'>mirror</a></li>
+                            <li><a href='javascript:location.href="page4.html"'>page 4</a></li>
+                        </ul>
+                    </body>
+                </html>
+            """
         url = "http://redirect.simba.taobao.com/rd?c=un&w=unionpost&f=http%3A%2F%2Fwww.taobao.com"
         url = url + "%2Fgo%2Fact%2Fmmbd%2Fhd-home.php%3Fpid%3Dmm_15890324_2192376_23736178%26uni"
         url = url + "d%3D&k=b93d93a3e5c25156&p=mm_15890324_2192376_23736178"
@@ -341,6 +343,8 @@ class CrawerTestCase(unittest.TestCase):
         webpage._page_source = page_source
         webpage._headers = headers
         out_put_local = self.crawer.out_put
+        if os.path.exists(out_put_local) != True:
+            os.makedirs(out_put_local)
         self.crawer.out_put = "./test/test" + self.crawer.out_put.replace('.', '')        
         self.crawer.keyword = 'taobao'
         self.crawer._save_page_to_file(webpage)
@@ -357,24 +361,24 @@ class CrawerTestCase(unittest.TestCase):
             None
         """ 
         page_source = u"""
-                <!DOCTYPE html>
-                    <html>
-                        <head>
-                            <meta charset=utf8>
-                            <title>Crawl Me</title>
-                        </head>
-                        <body>
-                            <ul>
-                                <li><a href=page1.html>page 1</a></li>
-                                <li><a href="page2.html">page 2</a></li>
-                                <li><a href='page3.html'>page 3</a></li>
-                                <li><a href='mirror/index.html'>mirror</a></li>
-                                <li><a href='javascript:location.href="page4.html"'>page 4</a></li>
-                                <li><a href='javascript:location.href="page5.html"'>page 5</a></li>
-                            </ul>
-                        </body>
-                    </html>
-                """
+            <!DOCTYPE html>
+                <html>
+                    <head>
+                        <meta charset=utf8>
+                        <title>Crawl Me</title>
+                    </head>
+                    <body>
+                        <ul>
+                            <li><a href=page1.html>page 1</a></li>
+                            <li><a href="page2.html">page 2</a></li>
+                            <li><a href='page3.html'>page 3</a></li>
+                            <li><a href='mirror/index.html'>mirror</a></li>
+                            <li><a href='javascript:location.href="page4.html"'>page 4</a></li>
+                            <li><a href='javascript:location.href="page5.html"'>page 5</a></li>
+                        </ul>
+                    </body>
+                </html>
+            """
         url = "http://pycm.baidu.com:8081"
         hrefs = ['http://pycm.baidu.com:8081/page1.html', 
                  'http://pycm.baidu.com:8081/page2.html', 

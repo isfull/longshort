@@ -14,17 +14,16 @@ import logging
 
 import ConfigParser
 
+# get log singleton
 log = logging.getLogger('Spider.crawler')
 
 class Config(object):
     """
     Class of config model
-    
+
     Attributes:
         _cfg_file: the path of config file
-        
     """
-
     def __init__(self, cfg_file):
         '''
         Constructor
@@ -45,10 +44,6 @@ class Config(object):
         Raises:
             IOError: An error occurred access to the config file.
         """
-        #try:
         cfg = ConfigParser.ConfigParser()
         cfg.read(self._cfg_file)
         return cfg.get(section, option)
-        #except IOError as e:
-        #    log.error('IOError:%s' % e)
-        #    return False
