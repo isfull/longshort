@@ -1,3 +1,7 @@
+// Copyright 2017 Baidu Inc. All Rights Reserved.
+// Author: yue song (songyue02@baidu.com)
+//
+// <注意：上面空一行。此处开始描述文件功能>
 #include "handle_parse.h"
 
 #include <stdio.h>
@@ -57,4 +61,4 @@ namespace parse {
             }
         }
     }
-}
+} // namespace parse
