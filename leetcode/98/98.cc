@@ -13,29 +13,23 @@ public:
         if (root == NULL) {
             return true;
         }
+        return isValidBST(root->left) && CheckPrev(root) && isValidBST(root->right);
+    }
 
-        if (root->left == NULL && root->right == NULL)
-        {
+    bool CheckPrev(TreeNode* root) {
+        if (prev == NULL) {
+            prev = root;
             return true;
-        } else if (root->left != NULL && root->right == NULL) {
-            if (root->left->val < root->val)
-            {
-                return isValidBST(root->left);
-            }
-            return false;
-        } else if (root->left == NULL && root->right != NULL) {
-            if (root->right->val > root->val)
-            {
-                return isValidBST(root->right);
-            }
+        }
+        if (prev->val >= root->val) {
             return false;
         } else {
-            if (root->left->val < root->val && root->right->val > root->val)
-            {
-                return isValidBST(root->left) && isValidBST(root->right);
-            }
-            return false;
+            prev = root;
+            return true;
         }
-
     }
+
+private:
+    static TreeNode* prev = NULL;
+
 };
