@@ -15,6 +15,7 @@ public:
                 t += temp * temp;
                 n /= 10;
             }
+            
             n = t;
         }
         bool rt = (n == 1);
