@@ -1,0 +1,24 @@
+## Clang-format
+1. 编辑.vimrc autocmd! BufWritePost .c,.cc,.cpp,.cxx,.h,.hpp,*.inl :silent ! ~/clang-format -sort-includes=false -i %
+2. $HOME 下放 clang-format .clang-format （注意要chmod +x clang-format）
+3. 然后编辑.vimrc加上 autocmd! BufWritePost .c,.cc,.cpp,.cxx,.h,.hpp,*.inl :silent ! ~/clang-format -sort-includes=false -i %
+
+## 代码风格
+http://zh-google-styleguide.readthedocs.io/en/latest/google-cpp-styleguide/
+
+## youcompleteme使用方法：
+
+解压后放到$HOME/ycm
+在.bashrc中加
+```
+if test -d $HOME/ycm; then
+
+source $HOME/ycm/_bashrc
+
+fi
+``
+
+要source .bashrc下
+
+ycm
+let g:ycm_show_diagnostics_ui = 0
