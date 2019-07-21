@@ -12,7 +12,7 @@ Date:    2016/05/03
 """
 import threading
 import logging
-import MySQLdb
+#import MySQLdb
 from twisted.internet.protocol import ServerFactory
 from twisted.protocols.basic import LineReceiver
 
@@ -221,7 +221,7 @@ class Game():
     def _CheckResult(self):
         if len(self.m_userid_list) == len(self.m_score_set):
             self.m_game_stat = self.BROADCAST
-            self._WriteDB()
+            #self._WriteDB()
             self._BroadCast()
         else:
             # 通知统计失败，游戏结束
