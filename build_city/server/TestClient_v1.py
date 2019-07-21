@@ -57,6 +57,7 @@ class EchoClient(LineReceiver):
         cs_msg = pb_compile.PATH.mycity_pb2.CSGameMsg()
         cs_msg.type = pb_compile.PATH.mycity_pb2.ENTER_RANDOM
         cs_msg.cs1.uid = self.uid
+        cs_msg.cs1.username = "test1"
         cs_msg.cs1.userinfo = self.userinfo
         self.sendLine(cs_msg.SerializeToString())
 
@@ -159,7 +160,7 @@ class EchoClientFactory(ClientFactory):
 
 def main(reactor):
     factory = EchoClientFactory()
-    reactor.connectTCP('132.148.23.104', 8002, factory)
+    reactor.connectTCP('129.211.115.238', 8002, factory)
     #reactor.connectTCP('127.0.0.1', 8002, factory)
     return factory.done
 

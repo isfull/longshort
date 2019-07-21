@@ -15,6 +15,9 @@ from twisted.protocols.basic import LineReceiver
 import common.GenId
 import pb_compile.PATH.mycity_pb2
 
+# 房间测试
+# 废弃
+
 class EchoClient(LineReceiver):
     delimiter = "\x00"
     end = "Bye-bye!"
@@ -30,6 +33,7 @@ class EchoClient(LineReceiver):
         self.connectionMade2()
 
     def lineReceived(self, line):
+        print("recv:"+line)
         a = base64.b64decode(line)
         self.lineReceived2(a)
     def mysendLine(self, line):
@@ -60,6 +64,7 @@ class EchoClient(LineReceiver):
         cs_msg = pb_compile.PATH.mycity_pb2.CSGameMsg()
         cs_msg.type = pb_compile.PATH.mycity_pb2.ENTER_RANDOM
         cs_msg.cs1.uid = self.uid
+        cs_msg.cs1.username = "test1"
         cs_msg.cs1.userinfo = self.userinfo
         self.mysendLine(cs_msg.SerializeToString())
 
@@ -287,7 +292,7 @@ class EchoClientFactory(ClientFactory):
 def main(reactor):
     factory = EchoClientFactory()
     #reactor.connectTCP('127.0.0.1', 8002, factory)
-    reactor.connectTCP('132.148.23.104', 8002, factory)
+    reactor.connectTCP('129.211.115.238', 8002, factory)
     return factory.done
 
 
