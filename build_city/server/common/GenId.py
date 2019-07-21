@@ -11,7 +11,7 @@ Authors: allen
 Date:    2016/05/10
 """
 import logging
-import MySQLdb
+#import MySQLdb
 import common.Singleton
 
 log = logging.getLogger('City')
@@ -31,17 +31,17 @@ class GameIdManager(common.Singleton.Singleton):
 
     def Init(self):
         self.gid = 0;
-        con = MySQLdb.connect(host="localhost", user="chenyu", passwd="City#2016",db="db_city",port=3306)
-        cur = con.cursor()
+        #con = MySQLdb.connect(host="localhost", user="chenyu", passwd="City#2016",db="db_city",port=3306)
+        #cur = con.cursor()
         
-        rs_num = cur.execute("SELECT max(gid) FROM `tb_game`")
-        if rs_num == 1:
-            rs = cur.fetchone()
-            log.info("max gid:"+str(rs[0]))
-            self.gid = rs[0]
-        else:
-            self.gid = 0
+        #rs_num = cur.execute("SELECT max(gid) FROM `tb_game`")
+        #if rs_num == 1:
+        #    rs = cur.fetchone()
+        #    log.info("max gid:"+str(rs[0]))
+        #    self.gid = rs[0]
+        #else:
+        #    self.gid = 0
 
-        cur.close()
-        con.commit()
-        con.close()
+        #cur.close()
+        #con.commit()
+        #con.close()
