@@ -5,6 +5,7 @@
  *     ListNode *next;
  *     ListNode(int x) : val(x), next(NULL) {}
  * };
+ * 重点是划分好 左右，就能理清楚循环变量是哪个
  */
 class Solution
 {
