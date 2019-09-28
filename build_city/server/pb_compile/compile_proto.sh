@@ -1,2 +1,2 @@
 #!/bin/bash
-protoc -I=./ --python_out=PATH ./mycity
+./protoc -I=./ --python_out=PATH ./mycity

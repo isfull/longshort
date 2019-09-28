@@ -36,6 +36,7 @@ class ServerStatLink(LineReceiver):
         cs_msg = pb_compile.PATH.mycity_pb2.CSStatMsg()
         try:
             cs_msg.ParseFromString(line)
+            log.info("stat server receive:"+repr(cs_msg))
 
             # 使用观察者模式改写大循环？
             call_time = cs_msg.time
@@ -51,6 +52,7 @@ class ServerStatLink(LineReceiver):
         sc_msg.time = calltime
         sc_msg.version = "1.2"
         sc_msg.waitnum = str(wait)
+        log.info("stat server send:"+repr(sc_msg))
         self.sendLine(sc_msg.SerializeToString())
 
         

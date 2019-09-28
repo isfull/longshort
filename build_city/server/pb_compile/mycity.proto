@@ -1,0 +1,149 @@
+syntax = "proto3";
+package mycity;
+
+enum ResultType{
+RESULT_NONE = 0;
+OK = 1;
+ERROR = 2;
+
+LOADING_FAIL = 3;
+COLLECT_SCORE_FAIL = 4;
+GAMER_LEAVE = 5;
+
+// 2016-6-14 好友房间
+NO_ROOM_PLACE = 6;   // 人太多
+NEED_MORE_GAMER = 7; // 人太少
+
+}
+//-------------------------------------------
+//                  状态链接
+//-------------------------------------------
+// 这部分定义通用的服务器状态信息的查询
+
+// /// c->s ///
+message CSStatMsg {
+string time = 1;
+}
+
+// /// s->c ///
+message SCStatMsg {
+ResultType error = 1;
+string time = 2;
+string version = 3;
+string waitnum = 4;
+}
+
+//-------------------------------------------
+//                    游戏链接
+//-------------------------------------------
+// 这部分定义游戏过程中的信息
+enum GamingType {
+GAMETYPE_NONE = 0;
+ENTER_RANDOM = 1;         // 进入随机房间
+ENTER_FRIEND = 2;         // 进入好友房间
+FRINED_SUBMIT_MAP = 3;    // 更换地图
+FRIEND_ROOM_CHANGE = 4;   // 好友房间数据变动
+FRIEND_ASK_BEGIN = 5;     // 客户端请求开始
+RANDOM_BROADCAST_BEGIN = 6;// 服务器广播游戏开始
+LOADING_DONE = 7;         // 客户端加载完成
+ONE_ROUND = 8;            // 服务器广播一回合开始
+GAMER_OP = 9;             // 用户游戏行为
+UP_SCORE = 10;            // 提交分数
+BROADCAST_END = 11;       // 广播分数，并通知结束
+
+SERVER_END = 12;          // 服务器强制断开
+}
+message UserInfo{
+string uid = 1;
+string name = 2;
+}
+
+// 以下是子类型内容
+//ENTER_RANDOM = 1;         // 进入随机房间
+message CSEnterRandom {
+string uid = 1;
+string userinfo = 2;
+string username = 3;
+}
+//ENTER_FRIEND = 2;         // 进入好友房间
+message CSEnterFriend {
+string uid = 1;
+string userinfo = 2;
+string roomid = 3;
+string username = 4;
+}
+//FRINED_SUBMIT_MAP = 3;    // 更换地图
+message CSSubmitMap {
+string mapid = 1;
+}
+//FRIEND_ROOM_CHANGE = 4;   // 好友房间数据变动
+message SCRoomChange {
+string mapid = 1;
+repeated UserInfo unames = 2; // 后台生成的用户名#加一个结构
+}
+//FRIEND_ASK_BEGIN = 5;     // 客户端请求开始
+//RANDOM_BROADCAST_BEGIN = 6;// 服务器广播游戏开始
+message SCBroadcastBegin {
+string mapid = 1;
+int32 round_num = 2; // 回合数
+repeated UserInfo unames = 3; // 后台生成的用户名
+}
+//LOADING_DONE = 7;         // 客户端加载完成
+//ONE_ROUND = 8;            // 服务器广播一回合开始
+message UserOp {
+int32 x = 1;
+int32 y = 2;
+int32 r = 3;
+}
+message SCOneRound {
+// 谁走，第几回合，回合时长
+string uid = 1;
+int32 roundnum = 2;
+int32 steptime = 3;
+// 上一个人操作
+string lastuid = 4;
+UserOp operation = 5;
+}
+//GAMER_OP = 9;             // 用户游戏行为
+message CSGameOp {
+UserOp operation = 1;
+}
+//UP_SCORE = 10;            // 提交分数
+message CSUpScore {
+int32 score = 1;
+}
+//BROADCAST_END = 11;       // 广播分数，并通知结束
+message UidScore{
+int32 score = 1;
+string uid = 2;
+}
+message SCBroadcastEnd {
+repeated UidScore uidscore = 1; // uid和得分拼成的字符串
+}
+
+// 以下定义主结构
+// /// c->s ///
+message CSGameMsg {
+GamingType type = 1;
+CSEnterRandom cs1 = 2;
+CSEnterFriend cs2 = 3;
+CSSubmitMap cs3 = 4;
+//--SCRoomChange
+//--SCBroadcastBegin
+//--SCOneRound
+CSGameOp cs4 = 5;
+CSUpScore cs5 = 6;
+//--SCBroadcastEnd
+}
+
+// /// s->c ///
+message SCGameMsg {
+GamingType type = 1;
+ResultType error = 2;
+SCRoomChange sc1 = 3;//--CSEnterRandom
+SCBroadcastBegin sc2 = 4;//--CSEnterFriend
+SCOneRound sc3 = 5;//--CSSubmitMap
+//--CSGameOp
+//--CSUpScore
+SCBroadcastEnd sc4 = 6;
+}

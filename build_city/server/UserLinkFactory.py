@@ -36,6 +36,7 @@ def _SendMessage(oUserLink, s):
     oUserLink.sendLine(s)
 
 def ReactorSendMessage(oUserLink, s):
+    log.info("userlink server send:"+s)
     ss = common.Coding.CityEncode(s)
     reactor.callFromThread(_SendMessage, oUserLink, ss)
 
@@ -51,6 +52,7 @@ def HandleRequest(oUserLink, line):
     cs_msg = pb_compile.PATH.mycity_pb2.CSGameMsg()
     try:
         cs_msg.ParseFromString(line)
+        log.info("userlink server receive:"+ line)
 
         # 使用观察者模式改写大循环？
         # 是否是登录信息
@@ -119,7 +121,7 @@ class UserLink(LineReceiver):
 
 
     def lineReceived(self, line):
-        #log.info("receive:"+line)
+        log.info("receive:"+line)
         ss = common.Coding.CityDecode(line)
         # 使用观察者模式改写大循环？
         TaskRunner.DoProto(HandleRequest, self, ss)
