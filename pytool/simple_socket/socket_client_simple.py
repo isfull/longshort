@@ -38,7 +38,7 @@ class SocketSimple():
                 return True
             except socket.error as message:
                 self.sock = None
-                logger.error("connect fail:" + message)
+                logger.error("connect fail:" + str(message))
                 return False 
         return True
 
@@ -74,13 +74,13 @@ class SocketSimple():
             response_data = self.sock.recv(512)
         except Exception:
             logger.error("recv data timeout")
-            print "recv1 data timeout"
+            print("recv1 data timeout")
             return ""
         ## other part
         count = 0
         if not response_data: return ""
         headers = struct.unpack('!i', response_data[:4])
-        print repr(headers[0])
+        print(repr(headers[0]))
         total = headers[0]-4
         rlen = len(response_data)
         try:
@@ -95,7 +95,7 @@ class SocketSimple():
             return response_data[0:total]
         except Exception:
             logger.error("recv data timeout: count:" + str(count) + "|total:" + str(total) + "|len" + str(rlen))
-            print "recv2 data timeout"
+            print("recv2 data timeout")
             return ""
 
     '''
@@ -110,7 +110,7 @@ class SocketSimple():
             response_data = response_data + self.sock.recv(512)
         except Exception:
             logger.error("recv data timeout")
-            print "recv data timeout"
+            print("recv data timeout")
             return ""
         ## other part
         count = 0
@@ -128,6 +128,6 @@ class SocketSimple():
             return response_data
         except Exception:
             logger.error("recv data timeout: count:" + str(count))
-            print "recv data timeout"
+            print("recv data timeout")
             return ""
 

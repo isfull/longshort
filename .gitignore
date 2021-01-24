@@ -1,0 +1,7 @@
+.idea/
+*/.idea/
+cover.out
+coverage.html
+test.out
+*.log
+go.sum
