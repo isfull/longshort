@@ -8,12 +8,14 @@
 #include <string>
 #include <vector>
 
+using namespace std;
+
 class Solution
 {
 public:
-    std::vector<int> twoSum(std::vector<int> &nums, int target)
+    vector<int> twoSum(vector<int> &nums, int target)
     {
-        std::vector<int> result;
+        vector<int> result;
         for (int i = 0; i < nums.size() - 1; ++i)
         {
             int gap = target - nums[i];

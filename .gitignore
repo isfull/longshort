@@ -5,3 +5,7 @@ coverage.html
 test.out
 *.log
 go.sum
+
+*~
+bazel-*
+.bazelrc

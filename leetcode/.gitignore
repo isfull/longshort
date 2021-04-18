@@ -1,0 +1,4 @@
+*~
+bazel-*
+.bazelrc
+.idea
